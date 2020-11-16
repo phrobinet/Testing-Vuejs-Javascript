@@ -1,0 +1,19 @@
+{
+  "name": "Test-Vuejs-Javasvript",
+  "version": "0.0.1",
+  "description": "Testing Vuejs and JS",
+  "main": "index.js",
+  "authors": {
+    "name": "probin",
+    "email": ""
+  },
+  "repository": "/Test-Vuejs-Javasvript",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
