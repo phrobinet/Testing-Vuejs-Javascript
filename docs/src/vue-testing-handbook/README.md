@@ -1,7 +1,7 @@
 
 ## Qu'est-ce que ce guide ?
 
->En premier lieu, toute cette partie a été développer par Mr [Lachlan Miller](https://github.com/lmiller1990), je ne propose ici qu'une traduction de son projet [vue-testins-handbook](https://github.com/lmiller1990/vue-testing-handbook). Merci à lui pour ces explications, ces exemples.
+>En premier lieu, toute cette partie a été développer par Mr [Lachlan Miller](https://github.com/lmiller1990), je ne propose ici qu'une traduction de son projet [vue-testing-handbook](https://github.com/lmiller1990/vue-testing-handbook). Merci à lui pour ces explications, ces exemples.
 
 
 Bienvenue dans le manuel de test Vue.js !
