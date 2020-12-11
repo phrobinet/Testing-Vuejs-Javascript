@@ -17,8 +17,8 @@ const wrapper = shallowMount(Foo, {
 
 Créez un simple composant `<SubmitButton>` qui a deux `props`: `msg` et `isAdmin`. En fonction de la valeur du prop `isAdmin` le `<span>` aura l'un des deux états :
 
-* `Not Authorized` si `isAdmin` est faux (ou non passé comme prop)
-* `Admin Privileges` si `isAdmin` est vrai
+* `Not Authorized` si `isAdmin` est faux (ou non passé comme prop).
+* `Admin Privileges` si `isAdmin` est vrai.
 
 ```html
 <template>
