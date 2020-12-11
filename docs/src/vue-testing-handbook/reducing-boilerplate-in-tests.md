@@ -4,7 +4,7 @@
 > Cette article est disponible en screencast sur [Vue.js Courses](https://vuejs-course.com/screencasts/reducing-duplication-in-tests). Consultez le [ici](https://vuejs-course.com/screencasts/reducing-duplication-in-tests).
 
 L'idéal est souvent de commencer le test unitaire avec une nouvelle copie d'un composant.  
-De plus, à mesure que vos applications deviennent plus grandes et plus complexes, il y a des chances que vous ayez des composants avec beaucoup de props différents et éventuellement un nombre de librairie tierce  telle que Vuetify, VueRouter et Vuex. Cela peut entrainer l'apparition d'un grand nombre de code passe-partout, c'est à dire de code qui n'est pas directement en relation avec le test.
+De plus, à mesure que vos applications deviennent plus grandes et plus complexes, il y a des chances que vous ayez des composants avec beaucoup de props différents et éventuellement un nombre de librairie tierce telle que Vuetify, VueRouter et Vuex. Cela peut entrainer l'apparition d'un grand nombre de code passe-partout, c'est à dire de code qui n'est pas directement en relation avec le test.
 
 Dans cet article, on utilise Vuex et VueRouter et on vous montre quelques modèles pour vous aider à réduire la quantité de code  
 
@@ -12,9 +12,9 @@ Dans cet article, on utilise Vuex et VueRouter et on vous montre quelques modèl
 Le code source du test décrit sur cette page peut être trouvé [ici](https://github.com/lmiller1990/vue-testing-handbook/tree/master/demo-app/tests/unit/Posts.spec.js).
 
 
-## The Posts Component
+## Le composant Post
 
-Voici le composant que nous allons tester. Il affiche un prop `message`, s'il en reçoit un. Il affiche un bouton 'Nouveau Post' si l'utilisateur est identifié ainsi que les posts. A la fois les objets `authentication` et `posts` viennent du store de Vuex. Finalement, il rend des composants `router-link` avec un lien vers le post qu'il affiche.
+Voici le composant que nous allons tester. Il affiche un prop `message`, s'il en reçoit un. Il affiche un bouton 'Nouveau Post' si l'utilisateur est identifié ainsi que les postes. A la fois les objets `authentication` et `posts` viennent du store de Vuex. Finalement, il rend des composants `router-link` avec un lien vers le post qu'il affiche.
 
 ```vue
 <template>
@@ -90,9 +90,9 @@ export default new Vuex.Store({ ... })
 export default new VueRouter({ ... })
 ```
 
-C'est bien pour une application régulière, mais pas idéale pour les tests. Si vous faite cela , chaque fois que vous utiliserez le store de Vuex ou Router dans un test, il sera partagé avec tous les autres tests qui l'importent également. Idéalement, chaque composant devrait  avoir une copie du store et de router.
+C'est bien pour une application régulière, mais pas idéale pour les tests. Si vous faite cela, chaque fois que vous utiliserez le store de Vuex ou Router dans un test, il sera partagé avec tous les autres tests qui l'importent également. Idéalement, chaque composant devrait avoir une copie du store et de router.
 
-Un moyen simple de contourner ce problème consiste à exporter une fonction usine - c'est-à-dire une fonction qui renvoie une nouvelle instance de l'objet. Par exemple:
+Un moyen simple de contourner ce problème consiste à exporter une fonction usine - c'est-à-dire une fonction qui renvoie une nouvelle instance de l'objet. Par example:
 
 ```js
 // store.js
@@ -166,7 +166,7 @@ Cela ne teste pas complètement toutes les conditions ; c'est début mais suffis
 
 ## Une Fonction Personnalisé `createTestVue`
 
-Les cinq premières ligne de chaque test sont les mêmes :
+Les cinq premières lignes de chaque test sont les mêmes :
 
 ```js
 const localVue = createLocalVue()
@@ -191,7 +191,7 @@ const createTestVue = () => {
 ```
 Maintenant que nous avons encapsuler toute la logique dans une simple fonction. Nous retournons `store`, `router` et `localeVue` depuis que nous devons les passer à la fonction `mount`.
 
-Si nous refactorisons le premier test en utilisant `createTestVue`, cela ressemblerai à ceci :
+Si nous refactorisons le premier test en utilisant `createTestVue`, cela ressemblera à ceci :
 
 ```js
 it('renders a message if passed', () => {
@@ -316,7 +316,7 @@ Un autre avantage de ce remaniement est nous avons une fonction flexible `create
 
 Il y a d'autres améliorations possibles :
 
-- mise à jour de la fonction `createStore` pour permettre de définir l'état initital des modules Vuex avec l'espacement des noms (namespacing)
+- mise à jour de la fonction `createStore` pour permettre de définir l'état initial des modules Vuex avec l'espacement des noms (namespacing)
 - améliorer `createRouter` pour définir des routes spécifiques
 - Permettre à l'utilisateur de passer un `shallow` ou un `mount` comme argument à `createWrapper`.
 

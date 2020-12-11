@@ -61,7 +61,7 @@ PASS  tests/unit/Emitter.spec.js
 
 ## La syntaxe émise
 
-`emitted` retourne un objet. Les évènements émis sont sauvé comme propriété de l'objet. Vous pouvez inspecter les évènements en utilisant `emitted().[event]`:
+`emitted` retourne un objet. Les évènements émis sont sauvés comme propriété de l'objet. Vous pouvez inspecter les évènements en utilisant `emitted().[event]`:
 
 ```js
 emitted().myEvent //=>  [ [ 'name', 'password' ] ]
@@ -103,7 +103,7 @@ it("emits an event with two arguments", () => {
 
 Le test passe.
 
-## Tester les événéments sans monter le composant
+## Tester les événements sans monter le composant
 
 Parfois, vous pouvez vouloir tester les événements émis sans avoir à monter le composant. Vous pouvez le faire en utilisant `call`. Ecrivons un autre test.
 

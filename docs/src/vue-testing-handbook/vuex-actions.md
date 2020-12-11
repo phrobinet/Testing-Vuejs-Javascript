@@ -10,7 +10,7 @@ Le code source du test décrit sur cette page peut être trouvé [ici](https://g
 Nous allons écrire une action qui suivra le paterne commun de Vuex :
 We will write an action that follows a common Vuex pattern:
 
-1. Faire un appel asynchrone  d'une API.
+1. Faire un appel asynchrone d'une API.
 2. Effectuer un traitement des données (facultatif).
 3. Acter une mutation dont le résultat est un paramètre additionnel
 
@@ -32,7 +32,7 @@ export default {
 
 Le test d'action devrait affirmer que :
 
-1. Est-ce le  bon point final de l' API qui a été utilisé ?
+1. Est-ce le  bon point final de l'API qui a été utilisé ?
 2. Le paramètre additionnel est-il correct ?
 3. La bonne mutation a-t-elle été actée avec le résultat ?
 

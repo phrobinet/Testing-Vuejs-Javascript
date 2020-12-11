@@ -2,7 +2,7 @@
 
 Vous pouvez trouver le test décrit sur cette page [ici](https://github.com/lmiller1990/vue-testing-handbook/tree/master/demo-app/tests/unit/ParentWithAPICallChild.spec.js).
 
-## Pourquoi un stub?
+## Pourquoi un stub ?
 
 Lors de l'écriture de tests unitaires, nous voulons souvent _stuber_ des parties du code qui ne nous intéressent pas. Un stub est simplement un morceau de code qui en remplace un autre. Disons que vous écrivez un test pour un composant `<UserContainer>`. Il ressemble à ceci :
 
@@ -152,6 +152,6 @@ L'exécution de `yarn test:unit` ne montre aucun `console.log`, et le test réus
 
 - Les `stub` sont utiles pour déceler le comportement des enfants qui n'est pas lié à l'essai unitaire actuel
 - La fonction `shallowMount` bloque les composants enfants par défaut
-- vous pouvez passer "true" pour créer un stub par défaut, ou passer votre propre implémentation personnalisée
+- vous pouvez passer `true` pour créer un stub par défaut, ou passer votre propre implémentation personnalisée
 
 Vous pouvez trouver le test décrit sur cette page [ici].(https://github.com/lmiller1990/vue-testing-handbook/tree/master/demo-app/tests/unit/ParentWithAPICallChild.spec.js).

@@ -1,7 +1,7 @@
 
 ## Les Modules de Simulations (Mock)
 
-TODO: Écrivez cet article. Intéressé ? Ouvrez un issue, et bavardons !
+TODO : Écrivez cet article. Intéressé ? Ouvrez une issue, et bavardons !
 
 Pas directement lié au test de Vue, mais plus spécifique à Jest. Jest est très utilisé dans ce manuel et devient largement adopté par l'industrie, donc je pense qu'il mérite une section.
 

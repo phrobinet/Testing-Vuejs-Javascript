@@ -3,7 +3,7 @@
 
 Le guide précédant traitait du test des composants qui utilisent `$store.state` et `$store.gettres`, qui fournissent tous deux l'état actuel du composant. Lorsque l'affirmation d'un composant acter correctement une mutation ou propage une action, ce que nous voulons vraiment faire est d'affirmer que `$store.commit` et `$store.dispatch` est appelé  avec le bon gestionnaire (la mutation ou l'action appeler) et le paramètre additionnel.
 
-Il y a deux façon de procéder. La première consiste à utiliser le store de Vuex avec `createLocalVue`, et la seconde est d'utiliser un store fictif. Ces deux techniques sont présentées [ici](https://lmiller1990.github.io/vue-testing-handbook/vuex-in-components.html). Voyons-les à nouveau, dans le context des mutations et des actions.
+Il y a deux façons de procéder. La première consiste à utiliser le store de Vuex avec `createLocalVue`, et la seconde est d'utiliser un store fictif. Ces deux techniques sont présentées [ici](https://lmiller1990.github.io/vue-testing-handbook/vuex-in-components.html). Voyons-les à nouveau, dans le contexte des mutations et des actions.
 
 Le code source du test décrit sur cette page peut être trouvé [ici](https://github.com/lmiller1990/vue-testing-handbook/tree/master/demo-app/tests/unit/ComponentWithButtons.spec.js).
 
@@ -101,7 +101,7 @@ describe("ComponentWithButtons", () => {
 
 Notez que les tests sont notés `await` et s'appellent `nextTick`. Voir [ici](/simulating-user-input.html#writing-the-test) pour avoir plus de détails sur les raisons.
 
-Il y a beaucoup de code dans le test ci-dessus - mais rien de très excitant ne se passe. Nous créons une `localVue` et utilisons Vuex, puis créons un store, en passant par une fonction de simulation de Jest (`jest.fn()`) à la place de `testMutation`. Les mutations de Vuex sont toujours appelées avec deux arguments  : le premier est l'état actuel, et le second est le paramètre additionnel. Comme nous n'avons pas déclarer d'état pour le store, nous nous attendons à ce qu'il soit appelé avec un objet vide. Le second argument devrait être `{ msg: "Test Commit" }`, qui est codé en dur dans le composant.
+Il y a beaucoup de code dans le test ci-dessus - mais rien de très excitant ne se passe. Nous créons une `localVue` et utilisons Vuex, puis créons un store, en passant par une fonction de simulation de Jest (`jest.fn()`) à la place de `testMutation`. Les mutations de Vuex sont toujours appelées avec deux arguments : le premier est l'état actuel, et le second est le paramètre additionnel. Comme nous n'avons pas déclarer d'état pour le store, nous nous attendons à ce qu'il soit appelé avec un objet vide. Le second argument devrait être `{ msg: "Test Commit" }`, qui est codé en dur dans le composant.
 
 C'est beaucoup de code à écrire, mais c'est un moyen correct et valable de vérifier que les composants se comportent correctement. Une autre alternative qui nécessite moins de code est l'utilisation d'un store fictif. Voyons comment faire cela pendant l'écriture d'un test pour affirmer que `testAction` est envoyé.
 
@@ -128,13 +128,13 @@ it("dispatches an action when a button is clicked", async () => {
     "testAction" , { msg: "Test Dispatch" })
 })
 ```
-Il est plus concis que l'exemple précédent.  Pas `localVue`, ni de `Vuex` - au lieu d'une simulation de fonction, dans le test précédent ou nous avions fait `testMutation = jest.fn()`, nous simulons en fait la fonction `dispatch` elle-même. Puisque `$store.dispatch` est juste une fonction JavaScript normale, nous sommes capables de faire cela. Ensuite nous affirmons gestionnaire d'actions correct, `testActions`, est le premier argument, et le second argument, le paramètres additionnel, est correcte. Nous ne nous soucions pas de ce que l'action fait réellement - cela peut être testé de manière isolée. Le but de ce test est de simplement vérifier que le fait de cliquer sur un bouton envoie l'action correct avec le paramètre additionnel.
+Il est plus concis que l'exemple précédent.  Pas `localVue`, ni de `Vuex` - au lieu d'une simulation de fonction, dans le test précédent ou nous avions fait `testMutation = jest.fn()`, nous simulons en fait la fonction `dispatch` elle-même. Puisque `$store.dispatch` est juste une fonction JavaScript normale, nous sommes capables de faire cela. Ensuite nous affirmons gestionnaire d'actions correct, `testActions`, est le premier argument, et le second argument, le paramètre additionnel, est correcte. Nous ne nous soucions pas de ce que l'action fait réellement - cela peut être testé de manière isolée. Le but de ce test est de simplement vérifier que le fait de cliquer sur un bouton envoie l'action correct avec le paramètre additionnel.
 
 Que vous utilisiez un store réel ou un store fictif, vos tests sont fonction de vos préférences. Les deux sont corrects. L'important est que vous testiez vos composants.
 
 ## Tester un espace de nom d'Action (ou de Mutation)
 
-Le troisième et dernier exemple montre une autre façon de vérifier qu'une action a été envoyée (ou une mutation actée) avec bons arguments. Cette méthode combine les deux techniques décrite ci-dessus - un vrai magasin `Vuex`et une simulation d'une propagation d'une méthode.
+Le troisième et dernier exemple montre une autre façon de vérifier qu'une action a été envoyée (ou une mutation actée) avec bons arguments. Cette méthode combine les deux techniques décrite ci-dessus - un vrai magasin `Vuex` et une simulation d'une propagation d'une méthode.
 
 
 ```js

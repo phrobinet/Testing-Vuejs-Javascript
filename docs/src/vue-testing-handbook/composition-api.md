@@ -61,7 +61,7 @@ export default {
 </script>
 ```
 
-Les deux choses que nous devrons tester ici sont:
+Les deux choses que nous devrons tester ici sont :
 
 1. Le fait de cliquer sur le bouton d'incrémentation augmente-t-il de 1 le `state.count` ?
 
@@ -88,8 +88,7 @@ describe("CompositionApi", () => {
   })
 })
 ```
-Comme prévu, c'est très simple : quelle que soit la façon dont nous créons les composants, nous utilisons la même API et la même stratégie pour les tests. Vous devriez pourvoir modifier entièrement l'implémentation et ne pas avoir besoin de toucher aux tests. N'oubliez pas de tester les sorties (le rendu HTML, en général) en fonction des entrées données (accessoires, événements déclenchés), et non de l'implémentation
-As expected, this is very simple - regardless of the way we are composing out components, we use the same API and same strategies to test. You should be able to change the implementation entirely, and not need to touch the tests. Remember to test outputs (the rendered HTML, usually) based on given inputs (props, triggered events), not the implementation.
+Comme prévu, c'est très simple : quelle que soit la façon dont nous créons les composants, nous utilisons la même API et la même stratégie pour les tests. Vous devriez pourvoir modifier entièrement l'implémentation et ne pas avoir besoin de toucher aux tests. N'oubliez pas de tester les sorties (le rendu HTML, en général) en fonction des entrées données (accessoires, événements déclenchés), et non de l'implémentation.
 
 ## Tester le Bouton Clic
 

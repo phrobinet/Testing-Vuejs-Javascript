@@ -15,7 +15,7 @@ Le code source du test décrit sur cette page peut être trouvé [ici](https://g
 
 ## La création de composants
 
-Nous allons construire un simple `<App>` qui a une route `/nested-child`. Quand nous nous rendons sur `nested_child` on nous rend un composant `<NestedRoute>`. Créez un fichier `App.vue`et insérez le composant minimal suivant :
+Nous allons construire un simple `<App>` qui a une route `/nested-child`. Quand nous nous rendons sur `nested_child` on nous rend un composant `<NestedRoute>`. Créez un fichier `App.vue` et insérez le composant minimal suivant :
 
 ```vue
 <template>

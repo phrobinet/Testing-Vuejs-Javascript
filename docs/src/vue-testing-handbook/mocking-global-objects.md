@@ -2,7 +2,7 @@
 ## Simuler un objet global
 
 `vue-test-utils` fournit une façon simple de simuler un objet global en attaché à `Vue.prototype`, à la fois sur un test de base et établir une simulation par défaut pour tous les tests.
-`vue-test-utils` fournit un moyen simple de simuler des objets globaux attachés à Vue.prototype, à la fois test par test et pour définir une maquette par défaut pour tous les tests.
+`vue-test-utils` fournit un moyen simple de simuler des objets globaux attachés à `Vue.prototype`, à la fois test par test et pour définir une maquette par défaut pour tous les tests.
 
 Le test utilisé dans l'exemple suivant peut être trouvé [ici](https://github.com/lmiller1990/vue-testing-handbook/blob/master/demo-app/tests/unit/Bilingual.spec.js).
 
@@ -81,7 +81,7 @@ describe("Bilingual", () => {
 })
 ```
 
-Maintenant le test passe ! Il y a beaucoup d'option pour `mocks` à utiliser. Le plus souvent, je me retrouve à simuler les objet globaux qui provient des trois paquets mentionnés ci-dessus.
+Maintenant le test passe ! Il y a beaucoup d'option pour `mocks` à utiliser. Le plus souvent, je me retrouve à simuler les objets globaux qui provient des trois paquets mentionnés ci-dessus.
 
 ## Régler les simulations par défaut en utilisant config
 

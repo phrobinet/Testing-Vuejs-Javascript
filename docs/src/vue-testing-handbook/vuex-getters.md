@@ -19,8 +19,8 @@ const state = {
 Les accesseurs nous allons tester sont :
 
 
-1. `poodles`: gets all `poodles`
-2. `poodlesByAge`: gets all poodles, and accepts an age argument
+1. `poodles`: reçoit tous les `poodles`.
+2. `poodlesByAge`: il obtient tous les `poodles`, et accepte un argument d'âge.
 
 ## Créer les accesseurs
 
@@ -37,7 +37,7 @@ export default {
   }
 }
 ```
-Rien de bien excitant, rappelez-vous  que les accesseurs peuvent recevoir d'autre accesseurs comme second argument. Bien que nous ayons déjà un accesseur `poodles`, nous l'utiliser dans `poodlesByAges`. En retour de la fonction dans `poddlesByAge` qui prend un argument, nous pouvons passer des arguments aux accesseurs. L'accesseur `poodlesByAge` peût être utilisé comme ceci :
+Rien de bien excitant, rappelez-vous que les accesseurs peuvent recevoir d'autre accesseurs comme second argument. Bien que nous ayons déjà un accesseur `poodles`, nous l'utiliser dans `poodlesByAges`. En retour de la fonction dans `poddlesByAge` qui prend un argument, nous pouvons passer des arguments aux accesseurs. L'accesseur `poodlesByAge` peût être utilisé comme ceci :
 
 ```js
 computed: {
@@ -48,7 +48,7 @@ computed: {
 ```
 Commençons par un test pour `poodles`.
 
-## Ecire les tests
+## Ecrire les tests
 
 Comme un accesseur est juste une fonction JavaScript qui prend en premier argument un `state`, le test est vraiment simple. Je vais écrire mon test dans le fichier `getters.spec.js`, le code suivant :
 

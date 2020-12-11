@@ -1,5 +1,5 @@
 
-## Paramétrez  les props avec propsData
+## Paramétrez les props avec propsData
 
 `propsData` peut être utilisé aussi bien avec `mount` que `shallowMount`. Il est souvent utilisé pour tester les composants qui reçoivent les props de leur composant parent.
 
@@ -142,11 +142,11 @@ Le résultat de `console.log(wrapper.html())` va aussi s'afficher
 ```
 Nous pouvons voir que le prop `isAdmin` a été utilisé pour renvoyer le correct `<span>` élément.
 
-## Refactoriser  les tests
+## Refactoriser les tests
 
 Refactorisons le test en adhérant au principe de "Ne Pas Répétez" (Don't Repeat Yourself (DRY)). Comme tous les tests sont réussis, nous pouvons refactoriser en toute confiance. Tant que tous les tests sont réussis après la refactorisation, nous pouvons être sûrs de n'avoir rien cassé.
 
-## Refactoriser  avec une fonction usine
+## Refactoriser avec une fonction usine
 
 Dans les deux tests, nous appelons `mount` puis nous lui passons l’objet `propsData` similaire. Nous pouvons refactoriser en utilisant une fonction usine. Une fonction usine est simplement une fonction qui nous renvoie un objet (elle fait des objets d’où le nom fonction usine).
 

@@ -71,7 +71,7 @@ Expected value to equal:
 Received:
   {"postIds": [1], "posts": {}}
 ```
-Les `postIds` ont l'aire bien. Il ne nous reste plus qu'à ajouter le message à `state.posts`. A cause de la façon dont le système de réactivité de Vue fonctionne, nous ne pouvons pas simplement écrire `post[post.id] = post` pour ajouter le message. Plus de détails peuvent être trouvés [ici](https://vuejs.org/v2/guide/reactivity.html#Change-Detection-Caveats). Basiquement, vous devez créer un nouvel  objet en utilisant `Object.assign` ou l'opérateur `...`. Nous utiliserons l'opérateur `...` pour assigner le message à `state.posts`:
+Les `postIds` ont l'aire bien. Il ne nous reste plus qu'à ajouter le message à `state.posts`. A cause de la façon dont le système de réactivité de Vue fonctionne, nous ne pouvons pas simplement écrire `post[post.id] = post` pour ajouter le message. Plus de détails peuvent être trouvés [ici](https://vuejs.org/v2/guide/reactivity.html#Change-Detection-Caveats). Basiquement, vous devez créer un nouvel objet en utilisant `Object.assign` ou l'opérateur `...`. Nous utiliserons l'opérateur `...` pour assigner le message à `state.posts`:
 
 ```js
 export default {
@@ -86,10 +86,10 @@ Maintenant, le test est réussi !
 
 ## Conclusion
 
-Le test des mutations de Vuex nécessite rien de bien spécifique à Vue ou à Vuex, puisqu'il s'agi simplement de fonctions JavaScript. Il suffit de les importer et de les tester. La seule chose à laquelle il faut faire attention, ce sont les avertissements de réactivité de Vue, qui s'appliquent également à Vuex. Vous pouvez en savoir plus sur le système de réactivité et les avertissements courants [ici](https://vuejs.org/v2/guide/reactivity.html#Change-Detection-Caveats).
+Le test des mutations de Vuex nécessite rien de bien spécifique à Vue ou à Vuex, puisqu'il s'agit simplement de fonctions JavaScript. Il suffit de les importer et de les tester. La seule chose à laquelle il faut faire attention, ce sont les avertissements de réactivité de Vue, qui s'appliquent également à Vuex. Vous pouvez en savoir plus sur le système de réactivité et les avertissements courants [ici](https://vuejs.org/v2/guide/reactivity.html#Change-Detection-Caveats).
 
 
-Nous avons vu sur cette page:
+Nous avons vu sur cette page :
 
 - Les mutations de Vuex sont des fonctions JavaScript régulière.
 - Les mutations peuvent, et doivent, être tester indépendamment de l'application principale Vue.

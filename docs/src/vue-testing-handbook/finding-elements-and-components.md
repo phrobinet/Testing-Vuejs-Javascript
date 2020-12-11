@@ -1,5 +1,5 @@
 
-## Finding Elements
+## Trouver des éléments
 
 
 `vue-test-utils` fournit un certain nombre de possibilité pour trouver et affirmer la présence d'élément HTML ou d'autres composants Vue en utilisant la méthode `find`. L'utilisation principale de `find` est d'affirmer qu'un composant rend correctement un élément ou un composant enfant.
@@ -7,9 +7,9 @@
 
 Le code source du test décrit sur cette page peut être trouvé [ici](https://github.com/lmiller1990/vue-testing-handbook/tree/master/demo-app/tests/unit/Parent.spec.js).
 
-## Creating the Components
+## Le création de composants
 
-Pour cette exemple, nous allons créer un composant `<Child>` et un `<Parent>`.
+Pour cet exemple, nous allons créer un composant `<Child>` et un `<Parent>`.
 
 Child:
 
@@ -57,7 +57,7 @@ export default {
 
 ## `find` avec la syntaxe `querySelector`
 
-Les éléments réguliers peuvent facilement être sélectionner en utilisant la syntaxe utilisée avec `document.querySlector`. `vue-test-utils` fournit la méthode `isVisible`qui vérifie si les éléments rendus conditionnellement avec `v-show` sont visibles. Créer un fichier `Parent.spec.js` et à l'intérieur ajouter le test suivant :
+Les éléments réguliers peuvent facilement être sélectionner en utilisant la syntaxe utilisée avec `document.querySlector`. `vue-test-utils` fournit la méthode `isVisible` qui vérifie si les éléments rendus conditionnellement avec `v-show` sont visibles. Créer un fichier `Parent.spec.js` et à l'intérieur ajouter le test suivant :
 
 ```js
 import { mount } from "@vue/test-utils"
@@ -124,7 +124,7 @@ it("renders a Child component", () => {
   expect(wrapper.find({ name: "Child" }).exists()).toBe(true)
 })
 ```
-Ça passe ! Utiliser la propriété `name`peut être un peu contre intuitive, donc importer le composant réel est une alternative. Une autre option eset simplement d'ajouter une `class`ou un `id` et d'utiliser une requête en utilisant la syntax `querySelector` présentée dans les deux premiers exemples.
+Ça passe ! Utiliser la propriété `name` peut être un peu contre intuitive, donc importer le composant réel est une alternative. Une autre option est simplement d'ajouter une `class` ou un `id` et d'utiliser une requête en utilisant la syntaxe `querySelector` présentée dans les deux premiers exemples.
 
 ## `findAll`
 
@@ -158,14 +158,14 @@ it("renders many children", () => {
 })
 ```
 
-L'utilisation  de `yarn test:unit` montre que le test est réussi. Vous pouvez également utiliser la syntaxt `querySelector` avec `findAll`
+L'utilisation  de `yarn test:unit` montre que le test est réussi. Vous pouvez également utiliser la syntaxe `querySelector` avec `findAll`
 
 ## Conclusion
 
 Cette page couvre :
 
-- L'utilisation de `find`et de `findAll`avec la syntase de `querySlector`
+- L'utilisation de `find`et de `findAll` avec la syntaxe de `querySlector`
 - `isVisible` et `exists`
-- L'utilisation de `find` et de `findAll`avec un composant ou un `name`comme selecteur.
+- L'utilisation de `find` et de `findAll` avec un composant ou un `name` comme sélecteur.
 
 Le code source du test décrit sur cette page peut être trouvé [ici](https://github.com/lmiller1990/vue-testing-handbook/tree/master/demo-app/tests/unit/Parent.spec.js).

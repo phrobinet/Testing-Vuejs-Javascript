@@ -1,13 +1,13 @@
 
 ## Les Événements déclencheurs
 
-Une des choses les plus courantes que vos composants Vue feront est d'écouter les inputs de l'utilisateur. `vue-test-utils`et Jest facilitent les tests des inputs. Voyons comment utiliser les `trigrer`et les simulations de Jest pour vérifier le bon fonctionnement de nos composants.
+Une des choses les plus courantes que vos composants Vue feront est d'écouter les inputs de l'utilisateur. `vue-test-utils` et Jest facilitent les tests des inputs. Voyons comment utiliser les `trigrer` et les simulations de Jest pour vérifier le bon fonctionnement de nos composants.
 
 Vous pouvez trouver le code source de cette page [ici](https://github.com/lmiller1990/vue-testing-handbook/tree/master/demo-app/tests/unit/FormSubmitter.spec.js).
 
 ## La Création d'un composant
 
-Nous allons créer un simple composant formulaire, `<FormSubmitter>`, qui contient un `<input>` et un  `<button>`. Lorsque l'on clique sur le bouton, quelque chose devrait se produire. Le premier exemple révélera simplement un message de réussite, puis nous passerons à un exemple plus intéressant qui soumet le formulaire à un point final externe.
+Nous allons créer un simple composant formulaire, `<FormSubmitter>`, qui contient un `<input>` et un `<button>`. Lorsque l'on clique sur le bouton, quelque chose devrait se produire. Le premier exemple révélera simplement un message de réussite, puis nous passerons à un exemple plus intéressant qui soumet le formulaire à un point final externe.
 
 
 Créez un `<FormSubmitter>` et entrez le modèle :
@@ -53,7 +53,7 @@ Maintenant ajoutons la logique d'envoi du formulaire :
   }
 </script>
 ```
-Assez simple, nous définissons simplement `submitted` comme `true` lors de 'envoie du formulaire, ce qui révèle la `<div>` contenant le message de réussite.
+Assez simple, nous définissons simplement `submitted` comme `true` lors de l'envoie du formulaire, ce qui révèle la `<div>` contenant le message de réussite.
 
 
 ## Passez le test
@@ -78,7 +78,7 @@ describe("FormSubmitter", () => {
 })
 ```
 
-Ce test s'explique assez facilement. Nous "moutons" (`shallowMount`) le composant, définissons le nom d'utilisateur et utilisons la méthode que `vue-test-utils` fournie `trigger`  pour simuler les entrées de l'utilisateur. `trigger` fonctionne sur des événements personnalisés, ainsi que sur des événements qui utilisent modificateurs, comme `submit.prevent`, `keydown.enter`, et ainsi de suite.
+Ce test s'explique assez facilement. Nous "moutons" (`shallowMount`) le composant, définissons le nom d'utilisateur et utilisons la méthode que `vue-test-utils` fournie `trigger` pour simuler les entrées de l'utilisateur. `trigger` fonctionne sur des événements personnalisés, ainsi que sur des événements qui utilisent modificateurs, comme `submit.prevent`, `keydown.enter`, et ainsi de suite.
 
 Remarquez qu'après avoir appelé `trigger`, nous faisons un `await wrapper.vm.$nextTick()`. C'est pourquoi nous avons dû marquer le test comme `async` - pour pouvoir utiliser `await`. A partir de la version beta 28 de `vue-test-utils`, vous devez appeler `nextTick` pour vous assurer que le système de réactivité de Vue met à jour le DOM. Parfois, vous pouvez vous en sortir sans appeler `nextTick`, mais si vos composants deviennent plus complexes, vous pouvez rencontrer des problèmes d'exécution et votre assertion pourrait s'exécuter avant que Vue n'ait mis à jour le DOM. Vous pouvez en savoir plus à ce sujet dans la documentation officielle [vue-test-utils documentation](https://vue-test-utils.vuejs.org/guides/#updates-applied-by-vue).
 
@@ -99,7 +99,7 @@ Lancez le test avec `yarn test:unit`. Il devrait réussir.
 
 ## Un exemple concret
 
-Les formulaire sont généralement envoyé à la fin. Voyons comment nous pourrions tester ce composant avec une implémentation différente de `handleSublit`. Une pratique commun est d'assigner votre librairie HTTP à `Vue.prototype.$http`. Cela nous permet de faire une requête ajax en appelant simplement `this.$http.get(...)`. Pour en savoir plus sur cette pratique [ici](https://vuejs.org/v2/cookbook/adding-instance-properties.html).
+Les formulaires sont généralement envoyé à la fin. Voyons comment nous pourrions tester ce composant avec une implémentation différente de `handleSublit`. Une pratique commun est d'assigner votre librairie HTTP à `Vue.prototype.$http`. Cela nous permet de faire une requête ajax en appelant simplement `this.$http.get(...)`. Pour en savoir plus sur cette pratique [ici](https://vuejs.org/v2/cookbook/adding-instance-properties.html).
 
 Souvent, la bibliothèque est, `axios`, un client HTTP populaire. Dans ce cas, notre `handlSubmit` ressemblerait probablement à ceci :
 

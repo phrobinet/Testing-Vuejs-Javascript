@@ -1,7 +1,7 @@
 
 ## Installation de vue-cli
 
-`vue-test-utils` est la librairie officielle de test pour Vue, et nous l'utiliserons tout au long de ce guide. Elle fonctionne à la fois du coté navigateur et dans l'environnement Node.js, et fonctionne avec n'importe quel programme de test. Nous effectuerons nos tests dans un environnement Node.js tout au long de ce guide.
+`vue-test-utils` est la librairie officielle de test pour Vue, et nous l'utiliserons tout au long de ce guide. Elle fonctionne à la fois du côté navigateur et dans l'environnement Node.js, et fonctionne avec n'importe quel programme de test. Nous effectuerons nos tests dans un environnement Node.js tout au long de ce guide.
 
 Le plus simple est de commencer par `vue-cli`. Il permettra de mettre en place un projet, ainsi que de configurer Jest, un framework populaire de test, Installez-le en exécutant :
 
@@ -115,10 +115,10 @@ Nous pouvons voir que le code est correct et le test passe. Le test est passé p
 
 ## Faire des affirmations
 
-Nous devons faire des affirmations pour être sûr que le composant se comporte correctement. Nous pouvons pour cela utilisez  l'API `expect` de Jest . Cela ressemble a ceci : `expect(result).to [matcher] (actual)`.
+Nous devons faire des affirmations pour être sûr que le composant se comporte correctement. Nous pouvons pour cela utilisez l'API `expect` de Jest. Cela ressemble a ceci : `expect(result).to [matcher] (actual)`.
 
 
-_Les Matchers_ sont des méthodes  permettant de comparer des valeurs et des objets. Par exemple :
+_Les Matchers_ sont des méthodes permettant de comparer des valeurs et des objets. Par exemple :
 
 ```js
 expect(1).toBe(1)
@@ -208,4 +208,4 @@ Greeting.vue
 
 Jest nous donne un bon retour. Nous pouvons voir ce qui est attendu et le résultat réel, ainsi que sur quelle ligne le test a échoué. Le test a échoué, comme prévu. Revenez sur `Greeting.vue`et assurez-vous que le test est à nouveau réussi.
 
-Ensuite nous verrons le deux méthodes que `vue-test-utils` fournit pour rendre les composants : `mount` et `shallowMount`.
+Ensuite nous verrons les deux méthodes que `vue-test-utils` fournit pour rendre les composants : `mount` et `shallowMount`.
