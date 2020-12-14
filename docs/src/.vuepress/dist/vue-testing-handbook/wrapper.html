@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Wrapper | Test in Javascript</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="Testing Vuejs and JS">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.ea2dea0c.css" as="style"><link rel="preload" href="/assets/js/app.24bc32f1.js" as="script"><link rel="preload" href="/assets/js/2.76e9c098.js" as="script"><link rel="preload" href="/assets/js/202.ae766aff.js" as="script"><link rel="prefetch" href="/assets/js/10.bd6fd6a5.js"><link rel="prefetch" href="/assets/js/100.8b2af6ca.js"><link rel="prefetch" href="/assets/js/101.07acf063.js"><link rel="prefetch" href="/assets/js/102.1929f46a.js"><link rel="prefetch" href="/assets/js/103.901cb352.js"><link rel="prefetch" href="/assets/js/104.08c08b1b.js"><link rel="prefetch" href="/assets/js/105.c87ae376.js"><link rel="prefetch" href="/assets/js/106.b9540579.js"><link rel="prefetch" href="/assets/js/107.c373e56a.js"><link rel="prefetch" href="/assets/js/108.190a5b42.js"><link rel="prefetch" href="/assets/js/109.de77279a.js"><link rel="prefetch" href="/assets/js/11.1abf9ce7.js"><link rel="prefetch" href="/assets/js/110.59279552.js"><link rel="prefetch" href="/assets/js/111.339076a2.js"><link rel="prefetch" href="/assets/js/112.e118dccb.js"><link rel="prefetch" href="/assets/js/113.5c0bd789.js"><link rel="prefetch" href="/assets/js/114.1d668748.js"><link rel="prefetch" href="/assets/js/115.fe28a47f.js"><link rel="prefetch" href="/assets/js/116.85cb9bc4.js"><link rel="prefetch" href="/assets/js/117.5d84ecae.js"><link rel="prefetch" href="/assets/js/118.97071e86.js"><link rel="prefetch" href="/assets/js/119.b1619621.js"><link rel="prefetch" href="/assets/js/12.9cda47c9.js"><link rel="prefetch" href="/assets/js/120.567ed6d6.js"><link rel="prefetch" href="/assets/js/121.45f71502.js"><link rel="prefetch" href="/assets/js/122.4bc1494e.js"><link rel="prefetch" href="/assets/js/123.1fe4d3cd.js"><link rel="prefetch" href="/assets/js/124.813789b6.js"><link rel="prefetch" href="/assets/js/125.0b07623a.js"><link rel="prefetch" href="/assets/js/126.edac2a7b.js"><link rel="prefetch" href="/assets/js/127.98f2f204.js"><link rel="prefetch" href="/assets/js/128.b37a7ef5.js"><link rel="prefetch" href="/assets/js/129.c343c3cb.js"><link rel="prefetch" href="/assets/js/13.85e5e853.js"><link rel="prefetch" href="/assets/js/130.c28fd2d7.js"><link rel="prefetch" href="/assets/js/131.e3da3de8.js"><link rel="prefetch" href="/assets/js/132.1262f0f9.js"><link rel="prefetch" href="/assets/js/133.e4c7b81d.js"><link rel="prefetch" href="/assets/js/134.4f10e5ad.js"><link rel="prefetch" href="/assets/js/135.6d73ee1c.js"><link rel="prefetch" href="/assets/js/136.5704a081.js"><link rel="prefetch" href="/assets/js/137.48982e54.js"><link rel="prefetch" href="/assets/js/138.9467f55e.js"><link rel="prefetch" href="/assets/js/139.ae166ff8.js"><link rel="prefetch" href="/assets/js/14.b9453e71.js"><link rel="prefetch" href="/assets/js/140.fdb98c05.js"><link rel="prefetch" href="/assets/js/141.2a2afcd3.js"><link rel="prefetch" href="/assets/js/142.ad3c4a11.js"><link rel="prefetch" href="/assets/js/143.dacf248f.js"><link rel="prefetch" href="/assets/js/144.33749fca.js"><link rel="prefetch" href="/assets/js/145.95a7d271.js"><link rel="prefetch" href="/assets/js/146.851f988c.js"><link rel="prefetch" href="/assets/js/147.7b397c38.js"><link rel="prefetch" href="/assets/js/148.bfa13c36.js"><link rel="prefetch" href="/assets/js/149.d769487a.js"><link rel="prefetch" href="/assets/js/15.a8754c4f.js"><link rel="prefetch" href="/assets/js/150.f7925a0b.js"><link rel="prefetch" href="/assets/js/151.30fc2417.js"><link rel="prefetch" href="/assets/js/152.da862d56.js"><link rel="prefetch" href="/assets/js/153.05501cee.js"><link rel="prefetch" href="/assets/js/154.13688f7b.js"><link rel="prefetch" href="/assets/js/155.5595f5b5.js"><link rel="prefetch" href="/assets/js/156.4607c511.js"><link rel="prefetch" href="/assets/js/157.8f3520e6.js"><link rel="prefetch" href="/assets/js/158.ed6318c6.js"><link rel="prefetch" href="/assets/js/159.ac08b4df.js"><link rel="prefetch" href="/assets/js/16.95db1a40.js"><link rel="prefetch" href="/assets/js/160.81eedd9c.js"><link rel="prefetch" href="/assets/js/161.d1ecd9fa.js"><link rel="prefetch" href="/assets/js/162.5bc472e3.js"><link rel="prefetch" href="/assets/js/163.5338ad76.js"><link rel="prefetch" href="/assets/js/164.00159e33.js"><link rel="prefetch" href="/assets/js/165.fd12f649.js"><link rel="prefetch" href="/assets/js/166.f5fd8ca2.js"><link rel="prefetch" href="/assets/js/167.0edc1d53.js"><link rel="prefetch" href="/assets/js/168.58447d54.js"><link rel="prefetch" href="/assets/js/169.218ee891.js"><link rel="prefetch" href="/assets/js/17.755e0cd0.js"><link rel="prefetch" href="/assets/js/170.199c205f.js"><link rel="prefetch" href="/assets/js/171.43f89ffb.js"><link rel="prefetch" href="/assets/js/172.5f627aeb.js"><link rel="prefetch" href="/assets/js/173.226d046a.js"><link rel="prefetch" href="/assets/js/174.3b7c1fe6.js"><link rel="prefetch" href="/assets/js/175.7ed848e5.js"><link rel="prefetch" href="/assets/js/176.ed19d38d.js"><link rel="prefetch" href="/assets/js/177.d2e99cd6.js"><link rel="prefetch" href="/assets/js/178.d83769b6.js"><link rel="prefetch" href="/assets/js/179.61302ec9.js"><link rel="prefetch" href="/assets/js/18.b3b0e0e4.js"><link rel="prefetch" href="/assets/js/180.54ae0f5f.js"><link rel="prefetch" href="/assets/js/181.cba0e05c.js"><link rel="prefetch" href="/assets/js/182.ecbbf334.js"><link rel="prefetch" href="/assets/js/183.c3a4205b.js"><link rel="prefetch" href="/assets/js/184.19fdcb7a.js"><link rel="prefetch" href="/assets/js/185.46ebc6f2.js"><link rel="prefetch" href="/assets/js/186.d1e72cee.js"><link rel="prefetch" href="/assets/js/187.87231894.js"><link rel="prefetch" href="/assets/js/188.f0b6fc01.js"><link rel="prefetch" href="/assets/js/189.eb432878.js"><link rel="prefetch" href="/assets/js/19.aabe0e7d.js"><link rel="prefetch" href="/assets/js/190.14b00b81.js"><link rel="prefetch" href="/assets/js/191.3f909bfd.js"><link rel="prefetch" href="/assets/js/192.028860bf.js"><link rel="prefetch" href="/assets/js/193.1b5b2f37.js"><link rel="prefetch" href="/assets/js/194.8d323eea.js"><link rel="prefetch" href="/assets/js/195.f0e12767.js"><link rel="prefetch" href="/assets/js/196.a2d7cf41.js"><link rel="prefetch" href="/assets/js/197.968f03ff.js"><link rel="prefetch" href="/assets/js/198.ef355cb1.js"><link rel="prefetch" href="/assets/js/199.515dd329.js"><link rel="prefetch" href="/assets/js/20.1e7f3f8e.js"><link rel="prefetch" href="/assets/js/200.9a6dac1b.js"><link rel="prefetch" href="/assets/js/201.41cd0115.js"><link rel="prefetch" href="/assets/js/21.bb911945.js"><link rel="prefetch" href="/assets/js/22.addf865a.js"><link rel="prefetch" href="/assets/js/23.28243e94.js"><link rel="prefetch" href="/assets/js/24.a17de2c4.js"><link rel="prefetch" href="/assets/js/25.02bfc0b8.js"><link rel="prefetch" href="/assets/js/26.cbf75245.js"><link rel="prefetch" href="/assets/js/27.61521ef6.js"><link rel="prefetch" href="/assets/js/28.9325d706.js"><link rel="prefetch" href="/assets/js/29.5805cc76.js"><link rel="prefetch" href="/assets/js/3.7c32fca4.js"><link rel="prefetch" href="/assets/js/30.3bac8758.js"><link rel="prefetch" href="/assets/js/31.d7527875.js"><link rel="prefetch" href="/assets/js/32.c93dd641.js"><link rel="prefetch" href="/assets/js/33.748d0532.js"><link rel="prefetch" href="/assets/js/34.20de348f.js"><link rel="prefetch" href="/assets/js/35.23193db6.js"><link rel="prefetch" href="/assets/js/36.0611c91e.js"><link rel="prefetch" href="/assets/js/37.f7324ef3.js"><link rel="prefetch" href="/assets/js/38.a69f5e3e.js"><link rel="prefetch" href="/assets/js/39.f45216ca.js"><link rel="prefetch" href="/assets/js/4.983f137d.js"><link rel="prefetch" href="/assets/js/40.c6afcce6.js"><link rel="prefetch" href="/assets/js/41.6c902063.js"><link rel="prefetch" href="/assets/js/42.d8e63344.js"><link rel="prefetch" href="/assets/js/43.9cec6759.js"><link rel="prefetch" href="/assets/js/44.5200d14e.js"><link rel="prefetch" href="/assets/js/45.b2a69d52.js"><link rel="prefetch" href="/assets/js/46.c818f64c.js"><link rel="prefetch" href="/assets/js/47.56ff6553.js"><link rel="prefetch" href="/assets/js/48.e2a83d9e.js"><link rel="prefetch" href="/assets/js/49.a4b7c360.js"><link rel="prefetch" href="/assets/js/5.44066470.js"><link rel="prefetch" href="/assets/js/50.62818f18.js"><link rel="prefetch" href="/assets/js/51.adc8dadf.js"><link rel="prefetch" href="/assets/js/52.8ab1dd65.js"><link rel="prefetch" href="/assets/js/53.4950b2fa.js"><link rel="prefetch" href="/assets/js/54.10d7d06f.js"><link rel="prefetch" href="/assets/js/55.92fb6735.js"><link rel="prefetch" href="/assets/js/56.1ed516ad.js"><link rel="prefetch" href="/assets/js/57.7d01fe08.js"><link rel="prefetch" href="/assets/js/58.c5c2b239.js"><link rel="prefetch" href="/assets/js/59.24cf9a09.js"><link rel="prefetch" href="/assets/js/6.ffe6f60a.js"><link rel="prefetch" href="/assets/js/60.e955341b.js"><link rel="prefetch" href="/assets/js/61.5cac46d9.js"><link rel="prefetch" href="/assets/js/62.13cba836.js"><link rel="prefetch" href="/assets/js/63.779e4489.js"><link rel="prefetch" href="/assets/js/64.8772eb9a.js"><link rel="prefetch" href="/assets/js/65.c36159d8.js"><link rel="prefetch" href="/assets/js/66.1c1067aa.js"><link rel="prefetch" href="/assets/js/67.c8fcf10f.js"><link rel="prefetch" href="/assets/js/68.68cd681c.js"><link rel="prefetch" href="/assets/js/69.c11cf74a.js"><link rel="prefetch" href="/assets/js/7.a00e933e.js"><link rel="prefetch" href="/assets/js/70.cd1c6d9c.js"><link rel="prefetch" href="/assets/js/71.7a58fc57.js"><link rel="prefetch" href="/assets/js/72.d4818f32.js"><link rel="prefetch" href="/assets/js/73.1d2fa4b2.js"><link rel="prefetch" href="/assets/js/74.c78932fc.js"><link rel="prefetch" href="/assets/js/75.d4d78c9d.js"><link rel="prefetch" href="/assets/js/76.899208f6.js"><link rel="prefetch" href="/assets/js/77.d7a98769.js"><link rel="prefetch" href="/assets/js/78.f38bbb92.js"><link rel="prefetch" href="/assets/js/79.21960021.js"><link rel="prefetch" href="/assets/js/8.aef0e204.js"><link rel="prefetch" href="/assets/js/80.98ce429f.js"><link rel="prefetch" href="/assets/js/81.9bea15a0.js"><link rel="prefetch" href="/assets/js/82.cf27c952.js"><link rel="prefetch" href="/assets/js/83.10352c38.js"><link rel="prefetch" href="/assets/js/84.8a6fab2c.js"><link rel="prefetch" href="/assets/js/85.ee9987ed.js"><link rel="prefetch" href="/assets/js/86.f89fad1c.js"><link rel="prefetch" href="/assets/js/87.44e47fe2.js"><link rel="prefetch" href="/assets/js/88.0863542b.js"><link rel="prefetch" href="/assets/js/89.928a3042.js"><link rel="prefetch" href="/assets/js/9.2250d602.js"><link rel="prefetch" href="/assets/js/90.ea6b407d.js"><link rel="prefetch" href="/assets/js/91.6e31a37f.js"><link rel="prefetch" href="/assets/js/92.f60fcb9f.js"><link rel="prefetch" href="/assets/js/93.3796cd61.js"><link rel="prefetch" href="/assets/js/94.fb3ea4ad.js"><link rel="prefetch" href="/assets/js/95.799e542d.js"><link rel="prefetch" href="/assets/js/96.207d2648.js"><link rel="prefetch" href="/assets/js/97.66fdd036.js"><link rel="prefetch" href="/assets/js/98.62e80ae4.js"><link rel="prefetch" href="/assets/js/99.b6f9c026.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ea2dea0c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Test in Javascript</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue-test-utils/" class="nav-link">
+  Vue-Test-Utils
+</a></div><div class="nav-item"><a href="/vue-testing-handbook/" class="nav-link router-link-active">
+  Vue-testing-handbook
+</a></div><div class="nav-item"><a href="/jest/" class="nav-link">
+  Jest
+</a></div><div class="nav-item"><a href="/mocha/" class="nav-link">
+  Mocha
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue-test-utils/" class="nav-link">
+  Vue-Test-Utils
+</a></div><div class="nav-item"><a href="/vue-testing-handbook/" class="nav-link router-link-active">
+  Vue-testing-handbook
+</a></div><div class="nav-item"><a href="/jest/" class="nav-link">
+  Jest
+</a></div><div class="nav-item"><a href="/mocha/" class="nav-link">
+  Mocha
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Manuel sur les tests de vue</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-testing-handbook/" aria-current="page" class="sidebar-link">Qu'est-ce que ce guide ?</a></li><li><a href="/vue-testing-handbook/setting-up-for-tdd.html" class="sidebar-link">Mise en place pour tdd</a></li><li><a href="/vue-testing-handbook/rendering-a-component.html" class="sidebar-link">Rendre un composant</a></li><li><a href="/vue-testing-handbook/wrapper.html" aria-current="page" class="active sidebar-link">Les méthodes avec wrapper</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#properties" class="sidebar-link">Properties</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#methods" class="sidebar-link">Methods</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#attributes" class="sidebar-link">attributes</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#classes" class="sidebar-link">classes</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#contains" class="sidebar-link">contains</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#destroy" class="sidebar-link">destroy</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#emitted" class="sidebar-link">emitted</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#emittedbyorder" class="sidebar-link">emittedByOrder</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#exists" class="sidebar-link">exists</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#find" class="sidebar-link">find</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#findall" class="sidebar-link">findAll</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#findcomponent" class="sidebar-link">findComponent</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#findallcomponents" class="sidebar-link">findAllComponents</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#html" class="sidebar-link">html</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#get" class="sidebar-link">get</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#is" class="sidebar-link">is</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#isempty" class="sidebar-link">isEmpty</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#isvisible" class="sidebar-link">isVisible</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#isvueinstance" class="sidebar-link">isVueInstance</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#name" class="sidebar-link">name</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#props" class="sidebar-link">props</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#setchecked" class="sidebar-link">setChecked</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#setdata" class="sidebar-link">setData</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#setmethods" class="sidebar-link">setMethods</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#setprops" class="sidebar-link">setProps</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#setselected" class="sidebar-link">setSelected</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#setvalue" class="sidebar-link">setValue</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#text" class="sidebar-link">text</a></li><li class="sidebar-sub-header"><a href="/vue-testing-handbook/wrapper.html#trigger" class="sidebar-link">trigger</a></li></ul></li><li><a href="/vue-testing-handbook/components-with-props.html" class="sidebar-link">Les composants avec props</a></li><li><a href="/vue-testing-handbook/computed-properties.html" class="sidebar-link">Les propiétés calculées</a></li><li><a href="/vue-testing-handbook/simulating-user-input.html" class="sidebar-link">Simuler la saisie utilisateur</a></li><li><a href="/vue-testing-handbook/testing-emitted-events.html" class="sidebar-link">Test des éléments émis</a></li><li><a href="/vue-testing-handbook/mocking-global-objects.html" class="sidebar-link">Simuler les objets globaux</a></li><li><a href="/vue-testing-handbook/stubbing-components.html" class="sidebar-link">Les composants stub</a></li><li><a href="/vue-testing-handbook/finding-elements-and-components.html" class="sidebar-link">Trouver les éléments et les composants</a></li><li><a href="/vue-testing-handbook/testing-vuex.html" class="sidebar-link">Tester Vuex</a></li><li><a href="/vue-testing-handbook/vuex-mutations.html" class="sidebar-link">Les mutations de Vuex</a></li><li><a href="/vue-testing-handbook/vuex-actions.html" class="sidebar-link">Les actions de Vuex</a></li><li><a href="/vue-testing-handbook/vuex-getters.html" class="sidebar-link">Les getteres de Vuex</a></li><li><a href="/vue-testing-handbook/vuex-in-components.html" class="sidebar-link">Vuex dans les composants</a></li><li><a href="/vue-testing-handbook/vuex-in-components-mutations-and-actions.html" class="sidebar-link">Vuex dans les mutations et les actions des composants </a></li><li><a href="/vue-testing-handbook/vue-router.html" class="sidebar-link">Vue Router</a></li><li><a href="/vue-testing-handbook/composition-api.html" class="sidebar-link">Composition de l'API</a></li><li><a href="/vue-testing-handbook/reducing-boilerplate-in-tests.html" class="sidebar-link">Réduction standard dans les tests</a></li><li><a href="/vue-testing-handbook/jest-mocking-modules.html" class="sidebar-link">Les modules de simulations de Jest</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="wrapper"><a href="#wrapper" class="header-anchor">#</a> Wrapper</h1> <p>Vue Test Utils est une API basée sur un wrapper.</p> <p>Un <code>Wrapper</code> est un objet qui contient un composant ou un vnode monté et des méthodes pour tester le composant ou le vnode.</p> <p><a href="https://vueschool.io/lessons/the-wrapper-object?friend=vuejs" title="En savoir plus sur l'objet Wrapper dans une leçon vidéo GRATUITE de l'école Vue" target="_blank" rel="noopener noreferrer">En savoir plus sur l'objet Wrapper dans une leçon vidéo GRATUITE de l'école Vue<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="properties"><a href="#properties" class="header-anchor">#</a> Properties</h2> <h3 id="vm"><a href="#vm" class="header-anchor">#</a> <code>vm</code></h3> <p>Composante (en lecture seule) : Il s'agit de l'instance Vue. Vous pouvez accéder à toutes les <a href="https://vuejs.org/v2/api/#Instance-Properties" target="_blank" rel="noopener noreferrer">méthodes et propriétés de l'instance d'un vm<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> avec wrapper.vm.  Ceci n'existe que pour le wrapper du composant Vue ou le wrapper du composant Vue liant les HTMLElement .</p> <h3 id="element"><a href="#element" class="header-anchor">#</a> <code>element</code></h3> <p>HTMLElement (lecture seule) : le nœud DOM racine de l'enveloppe</p> <h3 id="options"><a href="#options" class="header-anchor">#</a> <code>options</code></h3> <h4 id="options-attachedtodocument"><a href="#options-attachedtodocument" class="header-anchor">#</a> <code>options.attachedToDocument</code></h4> <p><code>Boolean</code> (read-only): <code>true</code> if component is <a href="https://vue-test-utils.vuejs.org/api/options.html" target="_blank" rel="noopener noreferrer">attached to document<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> when rendered.
+Booléen (lecture seule) : vrai si le composant est <a href="https://vue-test-utils.vuejs.org/api/options.html" target="_blank" rel="noopener noreferrer">joint au document<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> lors de son rendu.</p> <h3 id="selector"><a href="#selector" class="header-anchor">#</a> <code>selector</code></h3> <p>Sélecteur : le sélecteur qui a été utilisé par <a href="https://vue-test-utils.vuejs.org/api/wrapper/find.html" target="_blank" rel="noopener noreferrer"><code>find()</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> ou <a href="https://vue-test-utils.vuejs.org/api/wrapper/findAll.html" target="_blank" rel="noopener noreferrer"><code>findAll()</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> pour créer cette enveloppe</p> <h2 id="methods"><a href="#methods" class="header-anchor">#</a> Methods</h2> <h2 id="attributes"><a href="#attributes" class="header-anchor">#</a> attributes</h2> <p>Renvoie l'objet attribut de nœud DOM &quot;Wrapper&quot;. Si la &quot;clé&quot; est fournie, la valeur de la &quot;clé&quot; sera renvoyée.</p> <ul><li><p><strong>Arguments:</strong></p> <ul><li><code>{string} key</code> <strong>facultatif</strong></li></ul></li> <li><p><strong>Retours:</strong> <code>{[attribute: string]: any} | string</code></p></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+
+const wrapper = mount(Foo)
+expect(wrapper.attributes().id).toBe('foo')
+expect(wrapper.attributes('id')).toBe('foo')
+
+</code></pre></div><h2 id="classes"><a href="#classes" class="header-anchor">#</a> classes</h2> <p>Retourne les classes de nœuds DOM &quot;Wrapper&quot;.</p> <p>Retourne un tableau de noms de classes ou un booléen si un nom de classe est fourni.</p> <ul><li><p><strong>Arguments:</strong></p> <ul><li><code>{string} className</code> <strong>facultatif</strong></li></ul></li> <li><p><strong>Retours:</strong> <code>Array&lt;{string}&gt; | boolean</code></p></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+
+const wrapper = mount(Foo)
+expect(wrapper.classes()).toContain('bar')
+expect(wrapper.classes('bar')).toBe(true)
+
+</code></pre></div><h2 id="contains"><a href="#contains" class="header-anchor">#</a> contains</h2> <div class="custom-block danger"><p class="custom-block-title">WARNING</p> <p><em>L'utilisation de &quot;Contains&quot; est déconseillée et sera supprimée dans les prochaines versions. Utilisez <a href="https://vue-test-utils.vuejs.org/api/wrapper/find.html" target="_blank" rel="noopener noreferrer"><code>find</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> pour les nœuds DOM (en utilisant la syntaxe <code>querySelector</code>), <a href="https://vue-test-utils.vuejs.org/api/wrapper/findComponent.html" target="_blank" rel="noopener noreferrer"><code>findComponent</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> pour les composants, ou <a href="https://vue-test-utils.vuejs.org/api/wrapper/get.html" target="_blank" rel="noopener noreferrer"><code>wrapper.get</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> à la place.</em></p></div> <p>Assert <code>Wrapper</code> contains an element or component matching <a href="https://vue-test-utils.vuejs.org/api/selectors.html" target="_blank" rel="noopener noreferrer">selector<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.
+Affirmer que l'<code>Wrapper</code> contient un élément ou un composant correspondant <a href="https://vue-test-utils.vuejs.org/api/selectors.html" target="_blank" rel="noopener noreferrer">sélecteur<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <ul><li><p><strong>Arguments:</strong></p> <ul><li><code>{string|Component} selector</code></li></ul></li> <li><p><strong>Retours:</strong> <code>{boolean}</code></p></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+import Bar from './Bar.vue'
+
+const wrapper = mount(Foo)
+expect(wrapper.contains('p')).toBe(true)
+expect(wrapper.contains(Bar)).toBe(true)
+
+</code></pre></div><ul><li><strong>Voir aussi:</strong> <a href="https://vue-test-utils.vuejs.org/api/selectors.html" target="_blank" rel="noopener noreferrer">sélectionneurs<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="destroy"><a href="#destroy" class="header-anchor">#</a> destroy</h2> <p>Détruit une instance du composant Vue.</p> <ul><li><strong>Exemple:</strong></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import sinon from 'sinon'
+
+const spy = sinon.stub()
+mount({
+  render: null,
+  destroyed() {
+    spy()
+  }
+}).destroy()
+expect(spy.calledOnce).toBe(true)
+
+</code></pre></div><p>si l'option <code>attachTo</code>ou <code>AttachToDocument</code> a provoqué le montage du composant sur le document, les éléments du DOM du composant seront également supprimés du document.</p> <p>Pour les composants fonctionnels, <code>destroy</code> ne supprime du document que les éléments DOM rendus.</p> <h2 id="emitted"><a href="#emitted" class="header-anchor">#</a> emitted</h2> <p>Renvoie un objet contenant des événements personnalisés émis par le <code>Wrapper</code> <code>vm</code>.</p> <ul><li><p><strong>Retours:</strong> <code>{ [name: string]: Array&lt;Array&lt;any&gt;&gt; }</code></p></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+
+test('emit demo', async () =&gt; {
+  const wrapper = mount(Component)
+
+  wrapper.vm.$emit('foo')
+  wrapper.vm.$emit('foo', 123)
+
+  await wrapper.vm.$nextTick() // Wait until $emits have been handled
+
+  /*
+  wrapper.emitted() returns the following object:
+  {
+    foo: [[], [123]]
+  }
+  */
+
+  // Affirmation de l'élément émis
+  expect(wrapper.emitted().foo).toBeTruthy()
+
+  // Affirmation du nombre d'élément
+  expect(wrapper.emitted().foo.length).toBe(2)
+
+  // Affirmation du paramètre additionnel
+  expect(wrapper.emitted().foo[1]).toEqual([123])
+})
+
+</code></pre></div><p>Vous pouvez également écrire ce qui précède comme suit :</p> <div class="language- extra-class"><pre class="language-text"><code>// Affirmation de l'élément émis
+expect(wrapper.emitted('foo')).toBeTruthy()
+
+// Affirmation du nombre d'élément
+expect(wrapper.emitted('foo').length).toBe(2)
+
+// Affirmation du paramètre additionnel
+expect(wrapper.emitted('foo')[1]).toEqual([123])
+
+</code></pre></div><p>La méthode <code>.emitted()</code> renvoie le même objet chaque fois qu'il est appelé, et non un nouveau, et donc l'objet se met à jour lorsque de nouveaux événements sont déclenchés :</p> <div class="language- extra-class"><pre class="language-text"><code>const emitted = wrapper.emitted()
+
+expect(emitted.foo.length).toBe(1)
+
+// faire quelque chose pour que le &quot;wrapper&quot; émette l'événement &quot;foo&quot;
+
+expect(emitted.foo.length).toBe(2)
+
+</code></pre></div><h2 id="emittedbyorder"><a href="#emittedbyorder" class="header-anchor">#</a> emittedByOrder</h2> <div class="custom-block danger"><p class="custom-block-title">WARNING</p> <p><em>Le terme <code>emittedByOrder</code> est obsolète et sera supprimé dans les prochaines versions. Utilisez plutôt <code>wrapper.emitted</code>.</em></p></div> <p>Retourne un tableau contenant des événements personnalisés émis par le <code>Wrapper</code> <code>vm</code>.</p> <ul><li><p><strong>Retours:</strong> <code>Array&lt;{ name: string, args: Array&lt;any&gt; }&gt;</code></p></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+
+const wrapper = mount(Component)
+
+wrapper.vm.$emit('foo')
+wrapper.vm.$emit('bar', 123)
+
+/*
+wrapper.emittedByOrder() renvoie le tableau suivant :
+[
+  { name: 'foo', args: [] },
+  { name: 'bar', args: [123] }
+]
+*/
+
+// faire valoir l'ordre d'émission d'événement
+expect(wrapper.emittedByOrder().map(e =&gt; e.name)).toEqual(['foo', 'bar'])
+
+</code></pre></div><h2 id="exists"><a href="#exists" class="header-anchor">#</a> exists</h2> <p>Affirmation de l'existence de <code>wrapper</code> ou <code>wrapper-array</code>.</p> <p>Renvoie faux si on l'appelle sur un <code>Wrapper</code> ou <code>WrapperArray</code> vide.</p> <ul><li><p><strong>Retours:</strong> <code>{boolean}</code></p></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+
+const wrapper = mount(Foo)
+expect(wrapper.exists()).toBe(true)
+expect(wrapper.find('does-not-exist').exists()).toBe(false)
+expect(wrapper.findAll('div').exists()).toBe(true)
+expect(wrapper.findAll('does-not-exist').exists()).toBe(false)
+
+</code></pre></div><h2 id="find"><a href="#find" class="header-anchor">#</a> find</h2> <div class="custom-block danger"><p class="custom-block-title">WARNING</p> <p><em>L'utilisation de &quot;find&quot; pour rechercher un composant est déconseillée et sera supprimée. Utilisez plutôt <a href="https://vue-test-utils.vuejs.org/api/wrapper/findComponent.html" target="_blank" rel="noopener noreferrer"><code>findComponent</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</em></p></div> <p>Retourne le &quot;wrapper&quot; du premier nœud DOM ou le sélecteur de composants Vue correspondant.</p> <p>Utilisez n'importe quel sélecteur DOM valide (utilise la syntaxe <code>querySelector</code>).</p> <ul><li><p><strong>Arguments:</strong></p> <ul><li><code>{string} selector</code></li></ul></li> <li><p><strong>Retours:</strong> <code>{Wrapper}</code></p></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+import Bar from './Bar.vue'
+
+const wrapper = mount(Foo)
+
+const div = wrapper.find('div')
+expect(div.exists()).toBe(true)
+
+const byId = wrapper.find('#bar')
+expect(byId.element.id).toBe('bar')
+
+</code></pre></div><ul><li><p><strong>Note:</strong></p> <ul><li>Vous pouvez enchaîner les appels <code>find</code> ensemble :</li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>const button = wrapper.find({ ref: 'testButton' })
+expect(button.find('.icon').exists()).toBe(true)
+
+</code></pre></div><p>Voir aussi : <a href="https://vue-test-utils.vuejs.org/api/wrapper/get.html" target="_blank" rel="noopener noreferrer">get<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <h2 id="findall"><a href="#findall" class="header-anchor">#</a> findAll</h2> <div class="custom-block danger"><p class="custom-block-title">WARNING</p> <p><em>L'utilisation de <code>findAll</code> pour rechercher des composants est obsolète et sera supprimée. Utilisez plutôt <code>findAllComponents</code>.</em></p></div> <p>Retourne un <a href="https://vue-test-utils.vuejs.org/api/wrapper-array/" target="_blank" rel="noopener noreferrer"><code>WrapperArray</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <p>Utilisez n'importe quel <a href="https://vue-test-utils.vuejs.org/api/selectors.html" target="_blank" rel="noopener noreferrer">sélecteur<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> valide.</p> <ul><li><p><strong>Arguments:</strong></p> <ul><li><code>{string|Component} selector</code></li></ul></li> <li><p><strong>Retours:</strong> <code>{WrapperArray}</code></p></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+import Bar from './Bar.vue'
+
+const wrapper = mount(Foo)
+
+const div = wrapper.findAll('div').at(0)
+expect(div.is('div')).toBe(true)
+
+const bar = wrapper.findAll(Bar).at(0) // Deprecated usage
+expect(bar.is(Bar)).toBe(true)
+
+</code></pre></div><h2 id="findcomponent"><a href="#findcomponent" class="header-anchor">#</a> findComponent</h2> <p>Retourne le <code>wrapper</code> du premier composant Vue correspondant.</p> <ul><li><p><strong>Arguments:</strong></p> <ul><li><code>{Component|ref|name} selector</code></li></ul></li> <li><p><strong>Retours:</strong> <code>{Wrapper}</code></p></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+import Bar from './Bar.vue'
+
+const wrapper = mount(Foo)
+
+const bar = wrapper.findComponent(Bar) // =&gt; finds Bar by component instance
+expect(bar.exists()).toBe(true)
+const barByName = wrapper.findComponent({ name: 'bar' }) // =&gt; finds Bar by `name`
+expect(barByName.exists()).toBe(true)
+const barRef = wrapper.findComponent({ ref: 'bar' }) // =&gt; finds Bar by `ref`
+expect(barRef.exists()).toBe(true)
+
+</code></pre></div><h2 id="findallcomponents"><a href="#findallcomponents" class="header-anchor">#</a> findAllComponents</h2> <p>Retourne un <a href="https://vue-test-utils.vuejs.org/api/wrapper-array/" target="_blank" rel="noopener noreferrer"><code>WrapperArray</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> de tous les composants Vue correspondants.</p> <ul><li><p><strong>Arguments:</strong></p> <ul><li><code>{Component|ref|name} selector</code></li></ul></li> <li><p><strong>Retours:</strong> <code>{WrapperArray}</code></p></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+import Bar from './Bar.vue'
+
+const wrapper = mount(Foo)
+const bar = wrapper.findAllComponents(Bar).at(0)
+expect(bar.exists()).toBeTruthy()
+const bars = wrapper.findAllComponents(Bar)
+expect(bar).toHaveLength(1)
+
+</code></pre></div><h2 id="html"><a href="#html" class="header-anchor">#</a> html</h2> <p>Renvoie le HTML du nœud DOM <code>Wrapper</code> sous forme de chaîne.</p> <ul><li><p><strong>Retours:</strong> <code>{string}</code></p></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+
+const wrapper = mount(Foo)
+expect(wrapper.html()).toBe('&lt;div&gt;&lt;p&gt;Foo&lt;/p&gt;&lt;/div&gt;')
+
+</code></pre></div><h2 id="get"><a href="#get" class="header-anchor">#</a> get</h2> <p>Fonctionne exactement comme <a href="https://vue-test-utils.vuejs.org/api/wrapper/find.html" target="_blank" rel="noopener noreferrer">find<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>, mais lance une erreur si aucun élément correspondant au sélecteur donné n'est trouvé. Vous devez utiliser <code>find</code> lorsque vous recherchez un élément qui peut ne pas exister. Vous devez utiliser cette méthode lorsque vous obtenez un élément qui devrait exister et elle fournira un beau message d'erreur si ce n'est pas le cas.</p> <p>Traduit avec www.DeepL.com/Translator (version gratuite)</p> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+
+const wrapper = mount(Foo)
+
+// Similaire à `wrapper.find`.
+// `get` lancera une erreur si un élément n'est pas trouvé. `find` ne fera rien.
+expect(wrapper.get('.does-exist'))
+
+expect(() =&gt; wrapper.get('.does-not-exist'))
+  .to.throw()
+  .with.property(
+    'message',
+    'Unable to find .does-not-exist within: &lt;div&gt;the actual DOM here...&lt;/div&gt;'
+  )
+
+</code></pre></div><h2 id="is"><a href="#is" class="header-anchor">#</a> is</h2> <div class="custom-block danger"><p class="custom-block-title">WARNING</p> <p><em>L'utilisation de <code>is</code> pour affirmer que le nœud DOM ou le sélecteur de correspondance <code>vm</code> est déprécié et sera supprimé. Considérez un appariement personnalisé tel que ceux fournis dans <a href="https://github.com/testing-library/jest-dom#custom-matchers" target="_blank" rel="noopener noreferrer">jest-dom<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>ou pour l'assertion de type d'élément DOM, utilisez native <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/tagName" target="_blank" rel="noopener noreferrer"><code>Element.tagName</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/tagName" target="_blank" rel="noopener noreferrer"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></em></p></div> <p>A la place.</p> <p>Pour conserver ces tests, un remplacement valable pour :</p> <ul><li><code>is('DOM_SELECTOR')</code> est une affirmation de <code>wrapper.element.tagName</code>.</li> <li><code>is('ATTR_NAME')</code> est une affirmation véridique de <code>wrapper.attributes('ATTR_NAME')</code>.</li> <li><code>is('CLASS_NAME')</code>  est une affirmation véridique de <code>wrapper.classes('CLASS_NAME')</code>.</li></ul> <p>En cas d'utilisation avec findComponent, accédez à l'élément DOM avec <code>findComponent(Comp).element</code>
+Affirmer le nœud DOM <code>Wrapper</code> ou les correspondances <code>vm</code> [selector] (https://vue-test-utils.vuejs.org/api/selectors.html).</p> <ul><li><p><strong>Arguments:</strong></p> <ul><li><code>{string|Component} selector</code></li></ul></li> <li><p><strong>Retours:</strong> <code>{boolean}</code></p></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+
+const wrapper = mount(Foo)
+expect(wrapper.is('div')).toBe(true)
+
+</code></pre></div><h2 id="isempty"><a href="#isempty" class="header-anchor">#</a> isEmpty</h2> <div class="custom-block danger"><p class="custom-block-title">WARNING</p> <p><em><code>isEmpty</code> est déprécié et sera supprimé dans les prochaines versions. Considérez un appariement personnalisé tel que ceux fournis dans [jest-dom] (https://github.com/testing-library/jest-dom#tobeempty)</em></p></div> <p>En cas d'utilisation avec findComponent, accédez à l'élément DOM avec <code>findComponent(Comp).element</code>.</p> <p>Affirmer que <code>Wrapper</code> ne contient pas de noeud enfant.</p> <ul><li><p><strong>Retours:</strong> <code>{boolean}</code></p></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+
+const wrapper = mount(Foo)
+expect(wrapper.isEmpty()).toBe(true)
+
+</code></pre></div><h2 id="isvisible"><a href="#isvisible" class="header-anchor">#</a> isVisible</h2> <div class="custom-block danger"><p class="custom-block-title">WARNING</p> <p><em>isVisible` est déprécié et sera supprimé dans les prochaines  versions.    Considérez un jumelage personnalisé tel que ceux fournis dans <a href="https://github.com/testing-library/jest-dom#tobevisible" target="_blank" rel="noopener noreferrer">jest-dom<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></em></p></div> <p>En cas d'utilisation avec findComponent, accédez à l'élément DOM avec <code>findComponent(Comp).element</code>.</p> <p>Affirmer que <code>wrapper</code> est visible.</p> <p>Retourne <code>false</code> si un vieil élément a le style <code>display : none</code> ou <code>visibility : hidden</code>.</p> <p>Ceci peut être utilisé pour affirmer qu'un élément est caché par <code>v-show</code>.</p> <ul><li><p><strong>Retours:</strong> <code>{boolean}</code></p></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+
+const wrapper = mount(Foo)
+expect(wrapper.isVisible()).toBe(true)
+expect(wrapper.find('.is-not-visible').isVisible()).toBe(false)
+
+</code></pre></div><h2 id="isvueinstance"><a href="#isvueinstance" class="header-anchor">#</a> isVueInstance</h2> <div class="custom-block danger"><p class="custom-block-title">WARNING</p> <p><em><code>isVueInstance</code> est dépréciée et sera supprimée dans les prochaines versions. Les tests reposant sur l'affirmation <code>isVueInstance</code> n'ont que peu ou pas de valeur. Nous suggérons de les remplacer par des assertions ciblées.</em></p></div> <p>Pour conserver ces tests, un remplacement valable de <code>isVueInstance()</code> est une assertion véridique de <code>wrapper.find(...).vm</code>.</p> <p>L'assertion <code>Wrapper</code> est l'instance de Vue.</p> <ul><li><p><strong>Retours:</strong> <code>{boolean}</code></p></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+
+const wrapper = mount(Foo)
+expect(wrapper.isVueInstance()).toBe(true)
+
+</code></pre></div><h2 id="name"><a href="#name" class="header-anchor">#</a> name</h2> <div class="custom-block danger"><p class="custom-block-title">WARNING</p> <p><em><code>name</code> est dépréciée et sera supprimée dans les prochaines versions.</em></p></div> <p>Retourne le nom du composant si <code>Wrapper</code> contient une instance de Vue, ou le nom du tag du noeud DOM <code>Wrapper</code> si <code>Wrapper</code> ne contient pas d'instance de Vue.</p> <ul><li><p><strong>Retours:</strong> <code>{string}</code></p></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+
+const wrapper = mount(Foo)
+expect(wrapper.name()).toBe('Foo')
+const p = wrapper.find('p')
+expect(p.name()).toBe('p')
+
+</code></pre></div><h2 id="props"><a href="#props" class="header-anchor">#</a> props</h2> <p>Retourne l'objet props <code>Wrapper</code> <code>vm</code>.  Si <code>key</code> est fourni, la valeur pour &quot;key&quot; sera retournée.</p> <p><strong>Note : le Wrapper doit contenir une instance de Vue.</strong></p> <ul><li><p><strong>Arguments:</strong></p> <ul><li><code>{string} key</code> <strong>facultatif</strong></li></ul></li> <li><p><strong>Retours:</strong> <code>{[prop: string]: any} | any</code></p></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+
+const wrapper = mount(Foo, {
+  propsData: {
+    bar: 'baz'
+  }
+})
+expect(wrapper.props().bar).toBe('baz')
+expect(wrapper.props('bar')).toBe('baz')
+
+</code></pre></div><h2 id="setchecked"><a href="#setchecked" class="header-anchor">#</a> setChecked</h2> <p>Définit la valeur cochée pour l'élément d'entrée de type case à cocher ou radio et met à jour les données liées au <code>modèle V</code>.</p> <ul><li><p><strong>Arguments:</strong></p> <ul><li><code>{Boolean} checked (default: true)</code></li></ul></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+
+const wrapper = mount(Foo)
+const radioInput = wrapper.find('input[type=&quot;radio&quot;]')
+radioInput.setChecked()
+
+</code></pre></div><ul><li><strong>Note:</strong></li></ul> <p>Lorsque vous essayez de mettre la valeur à state via <code>v-model</code> par <code>radioInput.element.checked = true ; radioInput.trigger('input')</code>, <code>v-model</code> n'est pas déclenché. Le <code>v-model</code> est déclenché par l'événement <code>change</code>.</p> <p><code>checkboxInput.setChecked(checked)</code> est un alias du code suivant.</p> <div class="language- extra-class"><pre class="language-text"><code>checkboxInput.element.checked = checked
+checkboxInput.trigger('click')
+checkboxInput.trigger('change')
+
+</code></pre></div><h2 id="setdata"><a href="#setdata" class="header-anchor">#</a> setData</h2> <p>Définit les données &quot;Wrapper&quot; &quot;vm&quot;.</p> <p>setData fonctionne en appelant récursivement Vue.set.</p> <p><strong>Note the Wrapper must contain a Vue instance.</strong></p> <ul><li><p><strong>Arguments:</strong></p> <ul><li><code>{Object} data</code></li></ul></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+
+const wrapper = mount(Foo)
+wrapper.setData({ foo: 'bar' })
+expect(wrapper.vm.foo).toBe('bar')
+
+</code></pre></div><h2 id="setmethods"><a href="#setmethods" class="header-anchor">#</a> setMethods</h2> <div class="custom-block danger"><p class="custom-block-title">WARNING</p> <p><em><code>setMethods</code> est dépréciée et sera supprimée dans les prochaines versions.</em></p></div> <p>Il n'y a pas de voie claire pour remplacer les &quot;setMethods&quot;, car cela dépend vraiment de votre utilisation précédente. Cela conduit facilement à des tests bancals qui s'appuient sur des détails d'implémentation, ce qui <a href="https://github.com/vuejs/rfcs/blob/668866fa71d70322f6a7689e88554ab27d349f9c/active-rfcs/0000-vtu-api.md#setmethods" target="_blank" rel="noopener noreferrer">est déconseillé<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>Nous suggérons de repenser ces tests.</p> <p>Pour mettre au point une méthode complexe, il faut l'extraire du composant et le tester de manière isolée. Pour affirmer qu'une méthode est appelée, utilisez votre testeur pour l'espionner.</p> <p>Définit les méthodes <code>Wrapper</code> <code>vm</code> et met à jour les forces.</p> <p><strong>Note : le Wrapper doit contenir une instance de Vue.</strong></p> <ul><li><p><strong>Arguments:</strong></p> <ul><li><code>{Object} methods</code></li></ul></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import sinon from 'sinon'
+import Foo from './Foo.vue'
+
+const wrapper = mount(Foo)
+const clickMethodStub = sinon.stub()
+
+wrapper.setMethods({ clickMethod: clickMethodStub })
+wrapper.find('button').trigger('click')
+expect(clickMethodStub.called).toBe(true)
+
+</code></pre></div><h2 id="setprops"><a href="#setprops" class="header-anchor">#</a> setProps</h2> <ul><li><p><strong>Arguments:</strong></p> <ul><li><code>{Object} props</code></li></ul></li> <li><p><strong>Usage:</strong></p></li></ul> <p>Définir les props de <code>Wrapper</code> <code>vm</code> et forcer à mettre à jour</p> <p><strong>Note : le Wrapper doit contenir une instance de Vue.</strong></p> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+
+const wrapper = mount(Foo)
+wrapper.setProps({ foo: 'bar' })
+expect(wrapper.vm.foo).toBe('bar')
+
+</code></pre></div><p>Vous pouvez également passer un objet <code>propsData</code>, qui initialisera l'instance de Vue avec les valeurs passées.</p> <div class="language- extra-class"><pre class="language-text"><code>// Foo.vue
+export default {
+  props: {
+    foo: {
+      type: String,
+      required: true
+    }
+  }
+}
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+
+const wrapper = mount(Foo, {
+  propsData: {
+    foo: 'bar'
+  }
+})
+
+expect(wrapper.vm.foo).toBe('bar')
+
+</code></pre></div><h2 id="setselected"><a href="#setselected" class="header-anchor">#</a> setSelected</h2> <p>Sélectionne un élément d'option et met à jour les données liées au <code>v-model</code>.</p> <ul><li><strong>Exemple:</strong></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+
+const wrapper = mount(Foo)
+const options = wrapper.find('select').findAll('option')
+
+options.at(1).setSelected()
+
+</code></pre></div><ul><li><strong>Note:</strong></li></ul> <p>Lorsque vous essayez de mettre la valeur à state via <code>v-model</code> par <code>option.element.selected = true ; parentSelect.trigger('input')</code>, <code>v-model</code> n'est pas déclenché. Le <code>v-model</code> est déclenché par l'événement <code>change</code>.</p> <p><code>option.setSelected()</code> est un alias du code suivant.</p> <div class="language- extra-class"><pre class="language-text"><code>option.element.selected = true
+parentSelect.trigger('change')
+
+</code></pre></div><h2 id="setvalue"><a href="#setvalue" class="header-anchor">#</a> setValue</h2> <p>Définit la valeur d'une entrée de contrôle de texte ou d'un élément de sélection et met à jour les données liées au<code>v-model</code>.</p> <ul><li><p><strong>Arguments:</strong></p> <ul><li><code>{any} value</code></li></ul></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+
+const wrapper = mount(Foo)
+
+const textInput = wrapper.find('input[type=&quot;text&quot;]')
+textInput.setValue('some value')
+
+const select = wrapper.find('select')
+select.setValue('option value')
+
+// nécessite &lt;select multiple&gt;
+const multiselect = wrapper.find('select')
+multiselect.setValue(['value1', 'value3'])
+
+</code></pre></div><ul><li><p><strong>Note:</strong></p> <ul><li><code>textInput.setValue(value)</code> est un alias du code suivant.</li></ul> <div class="language- extra-class"><pre class="language-text"><code>textInput.element.value = value
+textInput.trigger('input')
+
+</code></pre></div><ul><li><code>select.setValue(value)</code> est un alias du code suivant.</li></ul> <div class="language- extra-class"><pre class="language-text"><code>select.element.value = value
+select.trigger('change')
+
+</code></pre></div></li></ul> <h2 id="text"><a href="#text" class="header-anchor">#</a> text</h2> <p>Renvoie le contenu textuel de<code>Wrapper</code>.</p> <ul><li><p><strong>Retours:</strong> <code>{string}</code></p></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import Foo from './Foo.vue'
+
+const wrapper = mount(Foo)
+expect(wrapper.text()).toBe('bar')
+
+</code></pre></div><h2 id="trigger"><a href="#trigger" class="header-anchor">#</a> trigger</h2> <p>Déclenche un événement de manière asynchrone sur le nœud DOM de l'<code>Wrapper</code>.</p> <p>Le <code>trigger</code> prend un objet <code>options</code> optionnel. Les propriétés de l'objet <code>options</code> sont ajoutées à l'événement. <code>trigger</code> renvoie une Promesse, qui une fois résolue, garantit la mise à jour du composant. <code>trigger</code> ne fonctionne qu'avec les événements DOM natifs. Pour émettre un événement personnalisé, utilisez <code>wrapper.vm.$emit('myCustomEvent')</code>.</p> <ul><li><p><strong>Arguments:</strong></p> <ul><li><code>{string} eventType</code> <strong>required</strong></li> <li><code>{Object} options</code> <strong>optional</strong></li></ul></li> <li><p><strong>Exemple:</strong></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { mount } from '@vue/test-utils'
+import sinon from 'sinon'
+import Foo from './Foo'
+
+test('trigger demo', async () =&gt; {
+  const clickHandler = sinon.stub()
+  const wrapper = mount(Foo, {
+    propsData: { clickHandler }
+  })
+
+  await wrapper.trigger('click')
+
+  await wrapper.trigger('click', {
+    button: 0
+  })
+
+  await wrapper.trigger('click', {
+    ctrlKey: true // For testing @click.ctrl handlers
+  })
+
+  expect(clickHandler.called).toBe(true)
+})
+
+</code></pre></div><ul><li><strong>Définir l'objectif de l'événement:</strong></li></ul> <p>Sous le capot, <code>trigger</code> crée un objet <code>Event</code> et propage l'événement sur l'élément Wrapper.</p> <p>Il n'est pas possible de modifier la valeur <code>target</code> d'un objet <code>Event</code>, donc vous ne pouvez pas définir <code>target</code> dans l'objet options.</p> <p>Pour ajouter un attribut à la &quot;cible&quot;, vous devez définir la valeur de l'élément Wrapper avant d'appeler le <code>trigger</code> Vous pouvez le faire avec la propriété <code>element</code>.</p> <div class="language- extra-class"><pre class="language-text"><code>const input = wrapper.find('input')
+input.element.value = 100
+input.trigger('click')
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue-testing-handbook/rendering-a-component.html" class="prev">
+        Rendre un composant
+      </a></span> <span class="next"><a href="/vue-testing-handbook/components-with-props.html">
+        Les composants avec props
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.24bc32f1.js" defer></script><script src="/assets/js/2.76e9c098.js" defer></script><script src="/assets/js/202.ae766aff.js" defer></script>
+  </body>
+</html>
