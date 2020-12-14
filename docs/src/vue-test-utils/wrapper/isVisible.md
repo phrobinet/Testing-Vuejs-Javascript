@@ -1,6 +1,6 @@
 ## isVisible
 
-::: warning Avertissement de déprédation
+::: warning Avertissement de dépréciation
 `isVisible` est déprécié et sera supprimé dans les prochaines versions.
 
 Considérez un jumelage personnalisé tel que ceux fournis dans [jest-dom](https://github.com/testing-library/jest-dom#tobevisible).

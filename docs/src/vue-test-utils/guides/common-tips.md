@@ -8,7 +8,7 @@ Nous recommandons plutôt de rédiger des tests qui affirment l'interface publiq
 
 Par exemple, imaginez un composant `Counter` qui incrémente un compteur d'affichage de 1 chaque fois qu'un bouton est cliqué. Le test ne devrait pas se soucier de la façon dont le `Counter` incrémente la valeur - il ne s'intéresse qu'à l'entrée et à la sortie.
 
-L'avantage de cette approche est que tant que l'interface publique de votre composant reste la même, vos tests seront réussis, quelle que soit l'évolution de l'implémentation interne du composant dans le temps. 
+L'avantage de cette approche est que tant que l'interface publique de votre composant reste la même, vos tests seront réussis, quelle que soit l'évolution de l'implémentation interne du composant dans le temps.
 
 Ce sujet est abordé plus en détail dans une [excellente présentation de Matt O'Connell](https://www.youtube.com/watch?v=OIpfWTThrK8).
 
@@ -33,7 +33,7 @@ Notez que l'utilisation de `shallowMount` rendra le composant testé différent 
 
 <div class="vueschool" style="margin-top:1em;"><a href="https://vueschool.io/lessons/learn-how-to-test-vuejs-lifecycle-methods?friend=vuejs" target="_blank" rel="sponsored noopener" title="Learn how to use Vue Test Utils to test Vue.js Lifecycle Hooks with Vue School">Apprenez à tester les méthodes et les intervalles du cycle de vie avec Vue School</a></div>
 
-Lorsque vous utilisez les méthodes `mount` ou `shallowMount`, vous pouvez vous attendre à ce que votre composant réponde à tous les événements du cycle de vie. Cependant, il est important de noter que les méthodes `beforeDestroy` et `destroyed` _ne seront pas déclanchées_ à moins que le composant ne soit détruit manuellement en utilisant `Wrapper.destroy()`.
+Lorsque vous utilisez les méthodes `mount` ou `shallowMount`, vous pouvez vous attendre à ce que votre composant réponde à tous les événements du cycle de vie. Cependant, il est important de noter que les méthodes `beforeDestroy` et `destroyed` _ne seront pas déclenchées_ à moins que le composant ne soit détruit manuellement en utilisant `Wrapper.destroy()`.
 
 De plus, le composant ne sera pas automatiquement détruit à la fin de chaque spécification, et c'est à l'utilisateur d'arrêter ou de nettoyer manuellement les tâches qui continueront à s'exécuter (`setInterval` ou `setTimeout`, par exemple) avant la fin de chaque spec.
 
@@ -173,11 +173,11 @@ mount(Component, {
 
 Vous pouvez également mettre à jour les props d'un composant déjà monté avec la méthode `wrapper.setProps({})`.
 
-_Pour une liste complète des options, vueillez consulter la [section des options de montage](../api/options.md) de la documentation.
+_Pour une liste complète des options, veuillez consulter la [section des options de montage](../api/options.md) de la documentation.
 
 ### Simulation de transition
 
-Bien qu'appeler `await Vue.nextTick()` fonctionne bien pour la plupart des cas d'utilisation, il y a certaines situations où des solutions de contournement supplémentaire sont nécessaires. Ces problèmes seront résolus avant que la bibliothèque `vue-test-utils`ne sorte de la version bêta. Un exemple est celui des composants de test unitaire avec le wrapper `<transition>` fourni par Vue.
+Bien qu'appeler `await Vue.nextTick()` fonctionne bien pour la plupart des cas d'utilisation, il y a certaines situations où des solutions de contournement supplémentaire sont nécessaires. Ces problèmes seront résolus avant que la bibliothèque `vue-test-utils` ne sorte de la version bêta. Un exemple est celui des composants de test unitaire avec le wrapper `<transition>` fourni par Vue.
 
 ```vue
 <template>
@@ -311,7 +311,7 @@ const $route = {
 
 mount(Component, {
   mocks: {
-    // ajouter l'objet `$route` simlué à l'instance Vue
+    // ajouter l'objet `$route` simuléà l'instance Vue
     // avant le montage du composant
     $route
   }

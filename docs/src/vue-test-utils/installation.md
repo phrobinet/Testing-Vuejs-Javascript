@@ -2,11 +2,11 @@
 
 ## Version sémantique
 
-Vue Test Utils suit [Semantic Versioning](https://semver.org/) dans tous sesprojets officiels pour les fonctionnalités et le comportement documentés. Pour les comportementsnon documentés ou les internes exposés, les changements sont décrits dans les [notes de version](https://github.com/vuejs/vue-test-utils/releases).
+Vue Test Utils suit [Semantic Versioning](https://semver.org/) dans tous ses projets officiels pour les fonctionnalités et le comportement documentés. Pour les comportements non documentés ou les internes exposés, les changements sont décrits dans les [notes de version](https://github.com/vuejs/vue-test-utils/releases).
 
 ## Utilisation des outils de Vue Test Utils avec Jest (recommandé)
 
-Jest est un outils de test développé par Facebook, visant à fournir une solution de test unitaire sur batterie. Vous pouvez en savoir plus sur Jest en consultant sa [documentation officielle](https://jestjs.io/).
+Jest est un outil de test développé par Facebook, visant à fournir une solution de test unitaire sur batterie. Vous pouvez en savoir plus sur Jest en consultant sa [documentation officielle](https://jestjs.io/).
 Jest is a test runner developed by Facebook, aiming to deliver a battery-included unit testing solution. You can learn more about Jest on its [official documentation](https://jestjs.io/).
 
 <div class="vueschool"><a href="https://vueschool.io/courses/learn-how-to-test-vuejs-components?friend=vuejs" target="_blank" rel="sponsored noopener" title="Learn how to use Jest and Vue Test Utils to test Single File Components with Vue School">Apprenez comment utiliser Jest pour tester les composants à fichier unique avec Vue School</a></div>
@@ -57,7 +57,7 @@ Si vous utilisez un alias de résolution dans la configuration du webpack, par e
 
 ### Couverture du code
 
-Jest peut être utilisé pour générer des rapports de couverture dans plusieur formats. Voici un exemple simple pour commencer :
+Jest peut être utilisé pour générer des rapports de couverture dans plusieursformats. Voici un exemple simple pour commencer :
 
 Développez votre configuration de `jest` avec l'option [`collectCoverage`](https://jestjs.io/docs/en/configuration#collectcoverage-boolean), puis ajoutez le tableau [`collectCoverageFrom`](https://jestjs.io/docs/en/configuration#collectcoveragefrom-array) pour définir les fichiers pour lesquels les informations de couverture doivent être collectées.
 
@@ -69,7 +69,7 @@ Développez votre configuration de `jest` avec l'option [`collectCoverage`](http
   }
 }
 ```
-Cela permettera d'établir des rapports de couverture avec les [declarants de couverture par défaut](https://jestjs.io/docs/en/configuration#coveragereporters-array-string). Vous trouverez une documentation supplémentaire dans la [documentation de configuration de Jest](https://jestjs.io/docs/en/configuration#collectcoverage-boolean), où vous trouverez des options pour les seuils de couverture, les répertoires de sortie ciles, etc.
+Cela permettra d'établir des rapports de couverture avec les [declarants de couverture par défaut](https://jestjs.io/docs/en/configuration#coveragereporters-array-string). Vous trouverez une documentation supplémentaire dans la [documentation de configuration de Jest](https://jestjs.io/docs/en/configuration#collectcoverage-boolean), où vous trouverez des options pour les seuils de couverture, les répertoires de sortie ciles, etc.
 
 ## Utilisation d'autres testeurs
 
@@ -111,7 +111,7 @@ La première chose à faire est d'installer des dépendances de test :
 npm install --save-dev @vue/test-utils mocha mochapack
 ```
 
-Après avoir installer Vue Test Utils et `mochapack`, vous devez définir un script de test dans votre `package.json` :
+Après avoir installé Vue Test Utils et `mochapack`, vous devez définir un script de test dans votre `package.json` :
 
 ```json
 // package.json
@@ -124,7 +124,7 @@ Après avoir installer Vue Test Utils et `mochapack`, vous devez définir un scr
 
 ### Fonctionnement de Vue Test Utils sans étape de construction
 
-Alors qu'il est courant de construire des applications Vue en utilisant des outils tels que [webpack](https://webpack.js.org/) pour regrouper l'application, `vue-loader` pour exploiter les composants de fichiers uniques, il est possible d'uiliser beaucoup moins les Vue Test Utils . Les exigences minimales pour les Vue Test Utils, en dehors de la bibliothèque elle-même, sont les suivantes :
+Alors qu'il est courant de construire des applications Vue en utilisant des outils tels que [webpack](https://webpack.js.org/) pour regrouper l'application, `vue-loader` pour exploiter les composants de fichiers uniques, il est possible d'd'utiliser  beaucoup moins les Vue Test Utils. Les exigences minimales pour les Vue Test Utils, en dehors de la bibliothèque elle-même, sont les suivantes :
 - Vue
 - [vue-template-compiler](https://github.com/vuejs/vue/tree/dev/packages/vue-template-compiler#readme)
 - a DOM (be it [jsdom](https://github.com/jsdom/jsdom) in a Node environment, or the DOM in a real browser)

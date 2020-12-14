@@ -255,7 +255,7 @@ mount(Component, {
 
 Vous pouvez également mettre à jour les props d'un composant déjà monté avec la méthode `wrapper.setProps({})`.
 
-_Pour une liste complète des options, vueillez consulter la [section des options de montage](../api/options.md) de la documentation.
+_Pour une liste complète des options, veuillez consulter la [section des options de montage](../api/options.md) de la documentation.
 
 ### Simulation de transition
 
@@ -393,7 +393,7 @@ const $route = {
 
 mount(Component, {
   mocks: {
-    // ajouter l'objet `$route` simlué à l'instance Vue
+    // ajouter l'objet `$route` simulé à l'instance Vue
     // avant le montage du composant
     $route
   }
@@ -751,7 +751,7 @@ it('fetches async when a button is clicked', done => {
 })
 ```
 
-La raison pour laquelle `setTimeout` permet au test de passer est que la file d'attente des micro-tâches, où les rappels de promesses sont traités, s'exécute avant la file d'attente des tâches, où les rappels `setTimeout` sont traités. Cela signifie qu'au moment où le rappel `setTimeout` s'exécute, tous les rappels de promesses dans la file d'attente des micro-tâches auront été exécutés. Par contre, `$nextTick` programme une microtâche, mais comme la file d'attente des microtâches est traitée dans l'ordre d'arrivée, cela garantit également que le rappel de promesse a été exécuté au moment où l'assertion est faite. Voir [ici](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/) pour une explication plus détaillée.
+La raison pour laquelle `setTimeout` permet au test de passer est que la file d'attente des micro-tâches, où les rappels de promesses sont traités, s'exécute avant la file d'attente des tâches, où les rappels `setTimeout` sont traités. Cela signifie qu'au moment où le rappel `setTimeout` s'exécute, tous les rappels de promesses dans la file d'attente des micro-tâches auront été exécutés. Par contre, `$nextTick` programme une microtâche, mais comme la file d'attente des micro tâches est traitée dans l'ordre d'arrivée, cela garantit également que le rappel de promesse a été exécuté au moment où l'assertion est faite. Voir [ici](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/) pour une explication plus détaillée.
 
 Une autre solution consiste à utiliser une fonction `async` et un paquet comme [flush-promises](https://www.npmjs.com/package/flush-promises). La fonction `flush-promises` permet de vider tous les gestionnaires de promesses en attente de résolution. Vous pouvez `await` l'appel de `flushPromises` pour vider les promesses en attente et améliorer la lisibilité de votre test
 
@@ -771,7 +771,7 @@ it('fetches async when a button is clicked', async () => {
 })
 ```
 
-Cette même technique peut être appliquée aux actionx de Vuex, qui retournent une promesse par défaut.
+Cette même technique peut être appliquée aux actions de Vuex, qui retournent une promesse par défaut.
 
 #### Pourquoi ne pas se contenter de `await button.trigger()` ?
 
@@ -932,7 +932,7 @@ describe('HelloWorld.vue', () => {
 ```
 C'est tout ce qui faut faire pour que TypeScript et Vue Test Utils travaillent ensemble !
 
-### Resources
+### Ressources
 
 - [Exemple de projet pour cette configuration](https://github.com/vuejs/vue-test-utils-typescript-example)
 - [Jest](https://jestjs.io/)
@@ -1015,7 +1015,7 @@ wrapper.vm.$route.path // /some/path
 
 L'installation de Vue Router ajoute `$route` et `$router` comme propriétés en lecture seule sur le prototype de Vue.
 
-Cela signifie que tous les futurs tests qui tenteront de simuler `$route` et `$router` echoueront
+Cela signifie que tous les futurs tests qui tenteront de simuler `$route` et `$router` échoueront
 
 Pour éviter cela, n'installez jamais Vue Router globalement lorsque vous effectuez des tests; utilisez un `localVue` comme détaillé ci-dessus.
 
@@ -1301,7 +1301,7 @@ export default {
 
 Les getters, les mutations et les actions sont tous des fonctions JavaScript, donc nous pouvons les tester sans utiliser Vue Test Utils et Vuex.
 
-L'avantage de tester les getters, les mutations et les actions séparément est que tests unitaires sont détaillés. Lorsque ils échouent, vous savez exactement ce qui ne va pas avec votre code. L'inconvénient est que vous devez avoir des fonctions Vuex fictives, comme `commit` et `dispatch`. Cela peut conduire à une situation où vos tests unitaires réussissent, mais que votre code de production échoue car vos simulations sont incorrectes.
+L'avantage de tester les getters, les mutations et les actions séparément est que tests unitaires sont détaillés. Lorsqu'ils échouent, vous savez exactement ce qui ne va pas avec votre code. L'inconvénient est que vous devez avoir des fonctions Vuex fictives, comme `commit` et `dispatch`. Cela peut conduire à une situation où vos tests unitaires réussissent, mais que votre code de production échoue car vos simulations sont incorrectes.
 
 Nous allons créer deux fichiers de test, `mutations.spec.js` et `getters.spec.js`:
 
@@ -1405,7 +1405,7 @@ import myModule from './myModule'
 const store = new Vuex.Store({ modules: { myModule: cloneDeep(myModule) } })
 ```
 
-### Resources
+### Ressources
 
 - [Exemple de projet pour tester les composants](https://github.com/eddyerburgh/vue-test-utils-vuex-example)
 - [Exemple de projet pour tester le store](https://github.com/eddyerburgh/testing-vuex-store-example)

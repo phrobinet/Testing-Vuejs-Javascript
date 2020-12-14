@@ -132,7 +132,7 @@ describe('Foo', () => {
 })
 ```
 
-**Avis de déprédation:**
+**Avis de déprédation :**
 
 Lors du stubbing de composants, la fourniture d'une chaîne de caractères (`ComponentToStub : '<div class="stubbed" />`) n'est plus supportée.
 
@@ -159,13 +159,13 @@ Lors du stubbing de composants, la fourniture d'une chaîne de caractères (`Com
 
 - **Options:**
 
-See [options](./options.md)
+Voir les [options](./options.md)
 
 - **Usage:**
 
 Comme [`mount`](mount.md), il crée un [`Wrapper`](wrapper/) qui contient le composant Vue monté et rendu, mais avec des composants enfants écrasés.
 
-**Sans les options:**
+**Sans les options :**
 
 ```js
 import { shallowMount } from '@vue/test-utils'
@@ -179,7 +179,7 @@ describe('Foo', () => {
 })
 ```
 
-**Avec les options de Vue:**
+**Avec les options de Vue :**
 
 ```js
 import { shallowMount } from '@vue/test-utils'
@@ -197,7 +197,7 @@ describe('Foo', () => {
 })
 ```
 
-**Rattacher au DOM:**
+**Rattacher au DOM :**
 
 ```js
 import { shallowMount } from '@vue/test-utils'
@@ -216,7 +216,7 @@ describe('Foo', () => {
 })
 ```
 
-**Slots par défaut et nommés:**
+**Slots par défaut et nommés :**
 
 ```js
 import { shallowMount } from '@vue/test-utils'
@@ -276,7 +276,7 @@ describe('Foo', () => {
 
 - **Options:**
 
-See [options](./options.md)
+Voir les [options](./options.md)
 
 - **Usage:**
 
@@ -288,7 +288,7 @@ Cheerio est une bibliothèque de type jQuery pour parcourir le DOM dans Node.js.
 
 `render` est inclus dans le paquet `@vue/server-test-utils`.
 
-**Sans les options:**
+**Sans les options :**
 
 ```js
 import { render } from '@vue/server-test-utils'
@@ -302,7 +302,7 @@ describe('Foo', () => {
 })
 ```
 
-**Avec les options de Vue:**
+**Avec les options de Vue :**
 
 ```js
 import { render } from '@vue/server-test-utils'
@@ -320,7 +320,7 @@ describe('Foo', () => {
 })
 ```
 
-**Les slots par défaut et nommés:**
+**Les slots par défaut et nommés :**
 
 ```js
 import { render } from '@vue/server-test-utils'
@@ -342,7 +342,7 @@ describe('Foo', () => {
 })
 ```
 
-**Les propriétés globales des Stubbing:**
+**Les propriétés globales des Stubbing :**
 
 ```js
 import { render } from '@vue/server-test-utils'
@@ -390,7 +390,7 @@ Rends un composant en HTML.
 
 `renderToString` est inclus dans le paquet `@vue/server-test-utils`.
 
-**Sans les options:**
+**Sans les options :**
 
 ```js
 import { renderToString } from '@vue/server-test-utils'
@@ -404,7 +404,7 @@ describe('Foo', () => {
 })
 ```
 
-**Avec les options de Vue:**
+**Avec les options de Vue :**
 
 ```js
 import { renderToString } from '@vue/server-test-utils'
@@ -422,7 +422,7 @@ describe('Foo', () => {
 })
 ```
 
-**Les slots par défaut et nommés:**
+**Les slots par défaut et nommés :**
 
 ```js
 import { renderToString } from '@vue/server-test-utils'
@@ -527,11 +527,11 @@ buttonWrapper.trigger('click')
 
 ## createLocalVue()
 
-- **Retours:**
+- **Retours :**
 
   - `{Component}`
 
-- **Usage:**
+- **Usage :**
 
 `createLocalVue` renvoie une classe Vue pour que vous puissiez ajouter des composants, des mixins et installer des plugins dans polluer la classe Vue globale.
 
@@ -554,21 +554,21 @@ const freshWrapper = shallowMount(Foo)
 expect(freshWrapper.vm.foo).toBe(false)
 ```
 
-- **Voir aussi:** [Common Tips](../guides/common-tips.md#applying-global-plugins-and-mixins)
+- **Voir aussi :** [Common Tips](../guides/common-tips.md#applying-global-plugins-and-mixins)
 
 ## createWrapper(node [, options])
 
-- **Arguments:**
+- **Arguments :**
 
   - `{vm|HTMLElement} node`
   - `{Object} options`
     - `{Boolean} attachedToDocument`
 
-- **Retours:**
+- **Retours :**
 
   - `{Wrapper}`
 
-- **Usage:**
+- **Usage :**
 
 `createWrapper` crée un `Wrapper` pour une instance Vue montée, ou un élément HTML.
 
@@ -693,7 +693,7 @@ config.silent = false
 
 ## enableAutoDestroy(hook)
 
-- **Arguments:**
+- **Arguments :**
 
   - `{Function} hook`
 

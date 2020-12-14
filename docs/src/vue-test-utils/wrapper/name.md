@@ -1,6 +1,6 @@
 ## name
 
-::: warning Avertissement de déprédation
+::: warning Avertissement de dépréciation
 `name` est dépréciée et sera supprimée dans les prochaines versions.
 :::
 

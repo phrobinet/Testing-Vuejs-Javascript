@@ -39,7 +39,7 @@ module.exports = {
         link: '/vue-test-utils/'
       },
       {
-        text: 'Le manuel de lmiller1990',
+        text: 'Vue-testing-handbook',
         link: '/vue-testing-handbook/'
       },
       {

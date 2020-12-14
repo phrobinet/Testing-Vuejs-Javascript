@@ -1,4 +1,4 @@
-# Pour commencer
+plateforme # Pour commencer
 
 Installez Jest en utilisant[`yarn`](https://yarnpkg.com/en/package/jest):
 
@@ -152,13 +152,13 @@ Bien que nous recommandions généralement d'utiliser la même version de chaque
 
 Jest peut être utilisé dans des projets qui utilisent [webpack](https://webpack.js.org/) pour gérer les ressources, les styles et la compilation. webpack offre des défis uniques par rapport à d'autres outils. Consultez le [guide webpack] (Webpack.md) pour commencer.
 
-### Utilisation d'un colis
+### Utilisation d'un package
 
 Jest peut être utilisé dans des projets qui utilisent [parcel-bundler] (https://parceljs.org/) pour gérer les actifs, les styles et la compilation, comme pour le webpack. Le paquet ne nécessite aucune configuration. Consultez le site officiel [docs](https://parceljs.org/getting_started.html) pour commencer.
 
 ### Utilisation de TypeScript
 
-Jest supporte le TypeScript, via Babel. Tout d'abord, assurez-vous que vous avez suivi les instructions ci-dessus sur [using Babel](#using-babel). Ensuite, installez le `@babel/preset-typescript` via `yarn` :
+Jest supporte le TypeScript, via Babel. Tout d'abord, assurez-vous que vous avez suivi les instructions ci-dessus sur [using Babel](#using-babel). Ensuite, installez-le `@babel/preset-typescript` via `yarn` :
 
 ```bash
 yarn add --dev @babel/preset-typescript
@@ -222,8 +222,8 @@ test('adding positive numbers is not zero', () => {
 
 Dans les tests, vous devez parfois faire la distinction entre `undefined`, `null`, and `false`, mais vous ne voulez parfois pas les traiter différemment. Jest contient des aides qui vous permettent d'être explicite sur ce que vous voulez.
 
-- `toBeNull` correspond seulement `null`
-- `toBeUndefined`  correspond seulement `undefined`
+- `toBeNull` correspond à `null`
+- `toBeUndefined`  correspond à `undefined`
 - `toBeDefined` est l'opposé de `toBeUndefined`
 - `toBeTruthy` correspond à tout ce qu'une déclaration `si` considère comme vrai
 - `toBeFalsy` correspond à tout ce qu'une déclaration `si` considère comme faux
@@ -294,9 +294,9 @@ test('but there is a "stop" in Christoph', () => {
 });
 ```
 
-## Les tableaux et iterables
+## Les tableaux et itérables
 
-Vous pouvez vérifier qi un tableau ou un itérable contient un élément particulier en utilisant `toContain`:
+Vous pouvez vérifier si un tableau ou un itérable contient un élément particulier en utilisant `toContain`:
 
 ```js
 const shoppingList = [
@@ -313,7 +313,7 @@ test('the shopping list has beer on it', () => {
 });
 ```
 
-## Les execptions
+## Les exceptions
 
 Si vous voulez tester si une fonction particulière lance une erreur lorsqu'elle est appelée, utilisez `toThrow`.
 
@@ -334,7 +334,7 @@ test('compiling android goes as expected', () => {
 
 ## Et plus
 
-Ce n'est qu'un avant-goût. Pour une liste complète des personnes qui correspondent, consultez les [documents de référence] (ExpectAPI.md).
+Ce n'est qu'un avant-goût. Pour une liste complète des personnes qui correspondent, consultez-les [documents de référence] (ExpectAPI.md).
 
 Une fois que vous avez pris connaissance des partenaires disponibles, l'étape suivante consiste à vérifier comment Jest vous permet de [tester le code asynchrone] (TestingAsyncCode.md).
 

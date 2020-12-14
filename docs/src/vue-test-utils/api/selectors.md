@@ -7,8 +7,8 @@ Beaucoup de méthodes prennent un sélecteur comme argument. Un sélecteur peut 
 Mount gère tous les sélecteurs CSS valide :
 
 - sélecteur de balise (`div`, `foo`, `bar`)
-- sélecteur de classe(`.foo`, `.bar`)
-- sélecteur d'attribut(`[foo]`, `[foo="bar"]`)
+- sélecteur de classe (`.foo`, `.bar`)
+- sélecteur d'attribut (`[foo]`, `[foo="bar"]`)
 - sélecteur d'ID (`#foo`, `#bar`)
 - sélecteur de pseudo-classe (`div:first-of-type`)
 
@@ -53,7 +53,7 @@ buttonWrapper.trigger('click')
 
 #### Ref
 
-En utilisant un objet d'option de recherche, Vue Test Utils permet de sélectionner des éléments par  `$ref` sur les composants wrapper
+En utilisant un objet d'option de recherche, Vue Test Utils permet de sélectionner des éléments par `$ref` sur les composants wrapper
 
 ```js
 const buttonWrapper = wrapper.find({ ref: 'myButton' })

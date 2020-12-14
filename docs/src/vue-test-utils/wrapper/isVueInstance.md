@@ -1,6 +1,6 @@
 ## isVueInstance
 
-::: warning Avertissement de déprédation
+::: warning Avertissement de dépréciation
 `isVueInstance` est dépréciée et sera supprimée dans les prochaines versions.
 
 Les tests reposant sur l'affirmation `isVueInstance` n'ont que peu ou pas de valeur. Nous suggérons de les remplacer par des assertions ciblées.

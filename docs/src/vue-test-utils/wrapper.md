@@ -30,7 +30,7 @@ Un `wrapper`est un objet qui contient un composant ou vnode monté et des métho
 
 ### attributes
 
-Renvoie l'objet attribut de nœud DOM "Wrapper". Si la "clé" est fournie, la valeur de la "clé" sera renvoyée.
+Renvoie l'objet attribut de nœud DOM "Wrapper". Si la "key" est fournie, la valeur de la "key" sera renvoyée.
 
 - **Arguments:**
 
@@ -75,7 +75,7 @@ expect(wrapper.classes('bar')).toBe(true)
 ### contains
 
 ::: warning Avertissement de déprédation
-L'utilisation de "Contains" est déconseillée et sera supprimée dans les prochaines versions. Utilisez find pour les nœuds DOM (en utilisant la syntaxe querySelector), findComponent pour les composants, ou wrapper.get à la place.
+L'utilisation de "Contains" est déconseillée et sera supprimée dans les prochaines versions. Utilisez "find" pour les nœuds DOM (en utilisant la syntaxe querySelector), findComponent pour les composants, ou wrapper.get à la place.
 :::
 
 Affirmer que le Wrapper contient un élément ou un composant correspondant [selector](../selectors.md).
@@ -121,7 +121,7 @@ mount({
 expect(spy.calledOnce).toBe(true)
 ```
 
-si l'option `attachTo` ou `attachToDocument` a provoqué le montage du composant sur le document, les éléments du DOM du composant seront également supprimés du document.
+Si l'option `attachTo` ou `attachToDocument` a provoqué le montage du composant sur le document, les éléments du DOM du composant seront également supprimés du document.
 
 Pour les composants fonctionnels, `destroy` ne supprime du document que les éléments DOM rendus.
 
@@ -190,7 +190,7 @@ expect(emitted.foo.length).toBe(2)
 ### emittedByOrder
 
 ::: warning Avertissement de déprédation
-Le terme emittedByOrder est obsolète et sera supprimé dans les prochaines versions.
+Le terme "emittedByOrder" est obsolète et sera supprimé dans les prochaines versions.
 
 Utilisez plutôt wrapper.emitted.
 :::
@@ -336,11 +336,11 @@ import Bar from './Bar.vue'
 
 const wrapper = mount(Foo)
 
-const bar = wrapper.findComponent(Bar) // => finds Bar by component instance
+const bar = wrapper.findComponent(Bar) // => Trouve Bar par instance de composant
 expect(bar.exists()).toBe(true)
-const barByName = wrapper.findComponent({ name: 'bar' }) // => finds Bar by `name`
+const barByName = wrapper.findComponent({ name: 'bar' }) // =>Trouve Bar par le nom
 expect(barByName.exists()).toBe(true)
-const barRef = wrapper.findComponent({ ref: 'bar' }) // => finds Bar by `ref`
+const barRef = wrapper.findComponent({ ref: 'bar' }) // => finds Bar by `ref` Trouve Bar par la ref
 expect(barRef.exists()).toBe(true)
 ```
 
@@ -386,10 +386,7 @@ expect(wrapper.html()).toBe('<div><p>Foo</p></div>')
 
 ### get
 
-Fonctionne exactement comme [find](./find.md), mais lance une erreur si aucun élément correspondant
-au sélecteur donné n'est trouvé. Vous devez utiliser find lorsque vous recherchez
-un élément qui peut ne pas exister. Vous devez utiliser cette méthode lorsque vous obtenez un élément
-qui devrait exister et elle fournira un beau message d'erreur si ce n'est pas le cas.
+Fonctionne exactement comme [find](./find.md), mais lance une erreur si aucun élément correspondant au sélecteur donné n'est trouvé. Vous devez utiliser find lorsque vous recherchez un élément qui peut ne pas exister. Vous devez utiliser cette méthode lorsque vous obtenez un élément qui devrait exister et elle fournira un beau message d'erreur si ce n'est pas le cas.
 
 ```js
 import { mount } from '@vue/test-utils'
@@ -397,7 +394,7 @@ import { mount } from '@vue/test-utils'
 const wrapper = mount(Foo)
 
 // Similaire à `wrapper.find`.
-// `get` will throw an error if an element is not found. `find` will do nothing.
+// `get` lancera une erreur si un élément n'est pas trouvé. Find ne fera rien.
 expect(wrapper.get('.does-exist'))
 
 expect(() => wrapper.get('.does-not-exist'))
@@ -884,7 +881,7 @@ test('trigger demo', async () => {
 
 - **Définir l'objectif de l'événement :**
 
-Sous le capot, `trigger` cré un objet `Event` et envoie l'événement sur l'élément Wrapper.
+Sous le capot, `trigger` crée un objet `Event` et envoie l'événement sur l'élément Wrapper.
 
 Il n'est pas possible de modifier la valeur `target` d'un objet `Event`, donc vous pouvez pas définir la `target` dans l'objet options.
 

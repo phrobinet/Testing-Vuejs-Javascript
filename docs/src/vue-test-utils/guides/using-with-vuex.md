@@ -256,7 +256,7 @@ describe('MyComponent.vue', () => {
 
 ### Tester un store de Vuex
 
-Il existe deux approches pour tester un store de Vuex. La première approche consiste à tester séparément les getters, les mutations, et les actions. La seconde est de créer un store et à le tester par rapport à celui-ci. Nous allons examiner les deux approches. 
+Il existe deux approches pour tester un store de Vuex. La première approche consiste à tester séparément les getters, les mutations, et les actions. La seconde est de créer un store et à le tester par rapport à celui-ci. Nous allons examiner les deux approches.
 
 Pour voir comment tester le store de Vuex, nous allons créer simplement un `counter` dans le store. Le store aura une mutation `increment` et un getter `evenOrOdd`.
 
@@ -280,7 +280,7 @@ export default {
 
 Les getters, les mutations et les actions sont tous des fonctions JavaScript, donc nous pouvons les tester sans utiliser Vue Test Utils et Vuex.
 
-L'avantage de tester les getters, les mutations et les actions séparément est que tests unitaires sont détaillés. Lorsque ils échouent, vous savez exactement ce qui ne va pas avec votre code. L'inconvénient est que vous devez avoir des fonctions Vuex fictives, comme `commit` et `dispatch`. Cela peut conduire à une situation où vos tests unitaires réussissent, mais que votre code de production échoue car vos simulations sont incorrectes.
+L'avantage de tester les getters, les mutations et les actions séparément est que tests unitaires sont détaillés. Lorsqu'ils échouent, vous savez exactement ce qui ne va pas avec votre code. L'inconvénient est que vous devez avoir des fonctions Vuex fictives, comme `commit` et `dispatch`. Cela peut conduire à une situation où vos tests unitaires réussissent, mais que votre code de production échoue car vos simulations sont incorrectes.
 
 Nous allons créer deux fichiers de test, `mutations.spec.js` et `getters.spec.js`:
 
@@ -326,9 +326,9 @@ test('"evenOrOdd" returns odd if "state.count" is odd', () => {
 
 Une autre approche pour tester le store de Vuex consiste à créer un store en cours d'exécution en utilisant la configuration du store.
 
-L'avantage de créer une instance de magasin en cours d'exécution est que nous n'avons pas à simuler des fonctions de Vuex. 
+L'avantage de créer une instance de magasin en cours d'exécution est que nous n'avons pas à simuler des fonctions de Vuex.
 
-L'inconvénient est que lorsqu'un test échoue, il peut être difficile de trouver où se situe le problème. 
+L'inconvénient est que lorsqu'un test échoue, il peut être difficile de trouver où se situe le problème.
 
 Écrivons un test. Lorsque nous créons un store, nous utiliserons `localVue` pour éviter de polluer le constructeur de base de Vue. Le test crée un store en utilisant l'export `store-config.js` :
 
@@ -374,7 +374,7 @@ test('updates "evenOrOdd" getter when "increment" is committed', () => {
 })
 ```
 
-Notez que nous utilisons `cloneDeep` pour cloner la configuration du store avant de créer un store avec lui. C'est parce que Vuex fait muter l'option d'options utilisé pour créer le store. Pour s'assurer que nous avons un store propre dans chaque test nous devons cloner l'objet `storeConfig`. 
+Notez que nous utilisons `cloneDeep` pour cloner la configuration du store avant de créer un store avec lui. C'est parce que Vuex fait muter l'option d'options utilisé pour créer le store. Pour s'assurer que nous avons un store propre dans chaque test nous devons cloner l'objet `storeConfig`.
 
 Cependant, `cloneDeep` n'est pas assez "profond" pour clone également des modules dans le store. Si notre `storeConfig` inclut des modules, nous devez passer par un objet à `new Vuex.Store()`, comme cela :
 
@@ -384,7 +384,7 @@ import myModule from './myModule'
 const store = new Vuex.Store({ modules: { myModule: cloneDeep(myModule) } })
 ```
 
-### Resources
+### Ressources
 
 - [Exemple de projet pour tester les composants](https://github.com/eddyerburgh/vue-test-utils-vuex-example)
 - [Exemple de projet pour tester le store](https://github.com/eddyerburgh/testing-vuex-store-example)

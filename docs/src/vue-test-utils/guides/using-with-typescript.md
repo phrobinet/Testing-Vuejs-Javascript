@@ -149,7 +149,7 @@ describe('HelloWorld.vue', () => {
 ```
 C'est tout ce qui faut faire pour que TypeScript et Vue Test Utils travaillent ensemble !
 
-### Resources
+### Ressources
 
 - [Exemple de projet pour cette configuration](https://github.com/vuejs/vue-test-utils-typescript-example)
 - [Jest](https://jestjs.io/)

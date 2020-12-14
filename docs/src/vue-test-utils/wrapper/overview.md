@@ -1,6 +1,6 @@
 ## overview
 
-::: warning Avertissement de déprédation
+::: warning Avertissement de dépréciation
 `overview` est dépréciée et sera supprimée dans les prochaines versions.
 :::
 

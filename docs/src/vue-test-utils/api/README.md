@@ -159,7 +159,7 @@ Lors du stubbing de composants, la fourniture d'une chaîne de caractères (`Com
 
 - **Options:**
 
-See [options](./options.md)
+Voir [options](./options.md)
 
 - **Usage:**
 
@@ -276,7 +276,7 @@ describe('Foo', () => {
 
 - **Options:**
 
-See [options](./options.md)
+voir [options](./options.md)
 
 - **Usage:**
 
@@ -380,7 +380,7 @@ describe('Foo', () => {
 
 - **Options:**
 
-See [options](./options.md)
+voir [options](./options.md)
 
 - **Usage:**
 
@@ -481,7 +481,7 @@ Vous pouvez également utiliser des combinateurs:
 
 - combinateurs de descendance direct (`div > #bar > .foo`)
 - combinateurs de descendance général (`div #bar .foo`)
-- sélecteur de frére adjacent (`div + .foo`)
+- sélecteur de frère adjacent (`div + .foo`)
 - sélecteur de frère général (`div ~ .foo`)
 
 ### Les composants Vue
@@ -593,7 +593,7 @@ Vue Test Utils comprend un objet de configuration des options définies utilisé
 - type: `Boolean`
 - default: `true`
 
-Contrôler s'il faut ou non afficher des avertissements de dépréciation . Lorsqu'il est sur `true`, tous les avertissements de déprédation sont visibles dans la console.
+Contrôler s'il faut ou non afficher des avertissements de dépréciation. Lorsqu'il est sur `true`, tous les avertissements de déprédation sont visibles dans la console.
 
 Exemple:
 

@@ -114,7 +114,7 @@ it('fetches async when a button is clicked', done => {
 })
 ```
 
-La raison pour laquelle `setTimeout` permet au test de passer est que la file d'attente des micro-tâches, où les rappels de promesses sont traités, s'exécute avant la file d'attente des tâches, où les rappels `setTimeout` sont traités. Cela signifie qu'au moment où le rappel `setTimeout` s'exécute, tous les rappels de promesses dans la file d'attente des micro-tâches auront été exécutés. Par contre, `$nextTick` programme une microtâche, mais comme la file d'attente des microtâches est traitée dans l'ordre d'arrivée, cela garantit également que le rappel de promesse a été exécuté au moment où l'assertion est faite. Voir [ici](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/) pour une explication plus détaillée.
+La raison pour laquelle `setTimeout` permet au test de passer est que la file d'attente des micro-tâches, où les rappels de promesses sont traités, s'exécute avant la file d'attente des tâches, où les rappels `setTimeout` sont traités. Cela signifie qu'au moment où le rappel `setTimeout` s'exécute, tous les rappels de promesses dans la file d'attente des micro-tâches auront été exécutés. Par contre, `$nextTick` programme une microtâche, mais comme la file d'attente des micro tâches est traitée dans l'ordre d'arrivée, cela garantit également que le rappel de promesse a été exécuté au moment où l'assertion est faite. Voir [ici](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/) pour une explication plus détaillée.
 
 Une autre solution consiste à utiliser une fonction `async` et un paquet comme [flush-promises](https://www.npmjs.com/package/flush-promises). La fonction `flush-promises` permet de vider tous les gestionnaires de promesses en attente de résolution. Vous pouvez `await` l'appel de `flushPromises` pour vider les promesses en attente et améliorer la lisibilité de votre test
 
@@ -134,7 +134,7 @@ it('fetches async when a button is clicked', async () => {
 })
 ```
 
-Cette même technique peut être appliquée aux actionx de Vuex, qui retournent une promesse par défaut.
+Cette même technique peut être appliquée aux actions de Vuex, qui retournent une promesse par défaut.
 
 #### Pourquoi ne pas se contenter de `await button.trigger()` ?
 

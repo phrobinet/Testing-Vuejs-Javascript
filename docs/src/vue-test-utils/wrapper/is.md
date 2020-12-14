@@ -1,6 +1,6 @@
 ## is
 
-::: warning Avertissement de déprédation
+::: warning Avertissement de dépréciation
 L'utilisation de `is` pour affirmer que le nœud DOM ou le sélecteur de correspondance `vm` est déprécié et sera supprimé.
 Considérez un appariement personnalisé tel que ceux fournis dans [jest-dom](https://github.com/testing-library/jest-dom#custom-matchers).
 ou pour l'assertion de type d'élément DOM, utilisez native [`Element.tagName`](https://developer.mozilla.org/en-US/docs/Web/API/Element/tagName) à la place.

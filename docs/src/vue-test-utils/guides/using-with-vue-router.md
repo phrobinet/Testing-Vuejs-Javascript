@@ -76,6 +76,6 @@ wrapper.vm.$route.path // /some/path
 
 L'installation de Vue Router ajoute `$route` et `$router` comme propriétés en lecture seule sur le prototype de Vue.
 
-Cela signifie que tous les futurs tests qui tenteront de simuler `$route` et `$router` echoueront
+Cela signifie que tous les futurs tests qui tenteront de simuler `$route` et `$router` échoueront
 
 Pour éviter cela, n'installez jamais Vue Router globalement lorsque vous effectuez des tests; utilisez un `localVue` comme détaillé ci-dessus.

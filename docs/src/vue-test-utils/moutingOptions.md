@@ -89,7 +89,7 @@ wrapper.find('#bar').text() // 'my-override'
 
 - type: `{ [name: string]: Array<Component>|Component|string }`
 
-Fournis un objet de contenu slot au composant . La clé correspond au nom du slot. La valeur peut être soit un composant , soit un tableau de composants, soit une chaîne de modèle, soit du texte.
+Fournis un objet de contenu slot au composant. La clé correspond au nom du slot. La valeur peut être soit un composant, soit un tableau de composants, soit une chaîne de modèle, soit du texte.
 
 Exemple:
 
@@ -344,8 +344,7 @@ wrapper = mount(Component, {
 
 Comme [`attachTo`](#attachto), mais crée automatiquement un nouvel élément `div` pour vous et l'insère dans le corps.
 
-Lorsque vous l'attachez au DOM, vous devez appeler `wrapper.destroy()` à la fin de votre test pour
-supprimer les éléments rendus du document et détruire l'instance constitutive.
+Lorsque vous l'attachez au DOM, vous devez appeler `wrapper.destroy()` à la fin de votre test pour supprimer les éléments rendus du document et détruire l'instance constitutive.
 
 ## attrs
 

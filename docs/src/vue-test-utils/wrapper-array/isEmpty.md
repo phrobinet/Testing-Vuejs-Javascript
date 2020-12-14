@@ -1,9 +1,9 @@
 ## isEmpty
 
-::: Avertissement de déprédation
+::: Avertissement de dépréciation
 `isEmpty` est dépréciée et sera supprimée dans les prochaines versions.
 
-Pensez à un appariement personnalisé comme ceux fournis dans  [jest-dom](https://github.com/testing-library/jest-dom#tobeempty).
+Pensez à un appariement personnalisé comme ceux fournis dans [jest-dom](https://github.com/testing-library/jest-dom#tobeempty).
 
 En cas d'utilisation avec findComponent, accédez à l'élément DOM avec findComponent(Comp).element
 :::

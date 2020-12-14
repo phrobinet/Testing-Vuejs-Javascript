@@ -1,10 +1,7 @@
 ## get
 
 
-Fonctionne exactement comme [find](./find.md), mais lance une erreur si aucun élément correspondant
-au sélecteur donné n'est trouvé. Vous devez utiliser find lorsque vous recherchez
-un élément qui peut ne pas exister. Vous devez utiliser cette méthode lorsque vous obtenez un élément
-qui devrait exister et elle fournira un beau message d'erreur si ce n'est pas le cas.
+Fonctionne exactement comme [find](./find.md), mais lance une erreur si aucun élément correspondant au sélecteur donné n'est trouvé. Vous devez utiliser find lorsque vous recherchez un élément qui peut ne pas exister. Vous devez utiliser cette méthode lorsque vous obtenez un élément qui devrait exister et elle fournira un beau message d'erreur si ce n'est pas le cas.
 
 ```js
 import { mount } from '@vue/test-utils'
@@ -12,7 +9,7 @@ import { mount } from '@vue/test-utils'
 const wrapper = mount(Foo)
 
 // Similaire à `wrapper.find`.
-// `get` will throw an error if an element is not found. `find` will do nothing.
+// `get` lancera une erreur si un élément n'est pas trouvé. `find` ne fera rien.
 expect(wrapper.get('.does-exist'))
 
 expect(() => wrapper.get('.does-not-exist'))

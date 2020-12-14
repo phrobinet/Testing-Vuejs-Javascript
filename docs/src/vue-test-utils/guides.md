@@ -370,7 +370,7 @@ mount(Component, {
 })
 ```
 
-**À noter: certains plugins, comme Vue Router, ajoutent des propriétés en lecture seule au constructeur global de Vue. Cala rend impossible de réinstaller le plugin sur un constructeur `localVue`, ou d'ajouter des mocks pour ces propriétés en lecture seule**
+**À noter : certains plugins, comme Vue Router, ajoutent des propriétés en lecture seule au constructeur global de Vue. Cala rend impossible de réinstaller le plugin sur un constructeur `localVue`, ou d'ajouter des mocks pour ces propriétés en lecture seule**
 
 ### Mocking Injections
 
@@ -766,7 +766,7 @@ it('fetches async when a button is clicked', async () => {
 })
 ```
 
-Cette même technique peut être appliquée aux actionx de Vuex, qui retournent une promesse par défaut.
+Cette même technique peut être appliquée aux actions de Vuex, qui retournent une promesse par défaut.
 
 #### Pourquoi ne pas se contenter de `await button.trigger()` ?
 
@@ -927,7 +927,7 @@ describe('HelloWorld.vue', () => {
 ```
 C'est tout ce qui faut faire pour que TypeScript et Vue Test Utils travaillent ensemble !
 
-### Resources
+### Les Ressources
 
 - [Exemple de projet pour cette configuration](https://github.com/vuejs/vue-test-utils-typescript-example)
 - [Jest](https://jestjs.io/)
@@ -1296,7 +1296,7 @@ export default {
 
 Les getters, les mutations et les actions sont tous des fonctions JavaScript, donc nous pouvons les tester sans utiliser Vue Test Utils et Vuex.
 
-L'avantage de tester les getters, les mutations et les actions séparément est que tests unitaires sont détaillés. Lorsque ils échouent, vous savez exactement ce qui ne va pas avec votre code. L'inconvénient est que vous devez avoir des fonctions Vuex fictives, comme `commit` et `dispatch`. Cela peut conduire à une situation où vos tests unitaires réussissent, mais que votre code de production échoue car vos simulations sont incorrectes.
+L'avantage de tester les getters, les mutations et les actions séparément est que tests unitaires sont détaillés. Lorsqu'ils échouent, vous savez exactement ce qui ne va pas avec votre code. L'inconvénient est que vous devez avoir des fonctions Vuex fictives, comme `commit` et `dispatch`. Cela peut conduire à une situation où vos tests unitaires réussissent, mais que votre code de production échoue car vos simulations sont incorrectes.
 
 Nous allons créer deux fichiers de test, `mutations.spec.js` et `getters.spec.js`:
 
@@ -1400,7 +1400,7 @@ import myModule from './myModule'
 const store = new Vuex.Store({ modules: { myModule: cloneDeep(myModule) } })
 ```
 
-### Resources
+### Les Ressources
 
 - [Exemple de projet pour tester les composants](https://github.com/eddyerburgh/vue-test-utils-vuex-example)
 - [Exemple de projet pour tester le store](https://github.com/eddyerburgh/testing-vuex-store-example)

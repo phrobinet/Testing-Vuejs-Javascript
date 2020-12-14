@@ -28,7 +28,7 @@ module.exports = function(config) {
 
 ### Fonctionnement de Vue Test Utils avec mocha-webpack
 
-Une autre stratégie pour tests les SFC consiste à compiler tous nos tests via la webpack et à les exécuter ensuite dans un testeur. L'avantage de cette approche est qu'elle nous donne un support complet pour toutes les fonctionnalités du webpack et du `vue-loader`, donc nous n'avons pas à faire de compromis dans notre code source. 
+Une autre stratégie pour tests les SFC consiste à compiler tous nos tests via la webpack et à les exécuter ensuite dans un testeur. L'avantage de cette approche est qu'elle nous donne un support complet pour toutes les fonctionnalités du webpack et du `vue-loader`, donc nous n'avons pas à faire de compromis dans notre code source.
 
 Nous avons trouvé [`mochapack`](https://github.com/sysgears/mochapack) qui nous offre une expérience très simplifiée pour cette tâche particulière.
 
@@ -38,7 +38,7 @@ La première chose à faire est d'installer des dépendances de test :
 npm install --save-dev @vue/test-utils mocha mochapack
 ```
 
-Après avoir installer Vue Test Utils et `mochapack`, vous devez définir un script de test dans votre `package.json` :
+Après avoir installé Vue Test Utils et `mochapack`, vous devez définir un script de test dans votre `package.json` :
 
 ```json
 // package.json
@@ -51,7 +51,7 @@ Après avoir installer Vue Test Utils et `mochapack`, vous devez définir un scr
 
 ### Fonctionnement de Vue Test Utils sans étape de construction
 
-Alors qu'il est courant de construire des applications Vue en utilisant des outils tels que [webpack](https://webpack.js.org/) pour regrouper l'application, `vue-loader` pour exploiter les composants de fichiers uniques, il est possible d'uiliser beaucoup moins les Vue Test Utils . Les exigences minimales pour les Vue Test Utils, en dehors de la bibliothèque elle-même, sont les suivantes :
+Alors qu'il est courant de construire des applications Vue en utilisant des outils tels que [webpack](https://webpack.js.org/) pour regrouper l'application, `vue-loader` pour exploiter les composants de fichiers uniques, il est possible d'utiliser beaucoup moins les Vue Test Utils . Les exigences minimales pour les Vue Test Utils, en dehors de la bibliothèque elle-même, sont les suivantes :
 - Vue
 - [vue-template-compiler](https://github.com/vuejs/vue/tree/dev/packages/vue-template-compiler#readme)
 - a DOM (be it [jsdom](https://github.com/jsdom/jsdom) in a Node environment, or the DOM in a real browser)

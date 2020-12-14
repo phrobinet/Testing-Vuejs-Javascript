@@ -8,7 +8,7 @@ Un composant pour mettre en place le composant Vue Router `router-link`.
 
 Vous pouvez utiliser ce composant pour trouver un composant router-link dans l'arbre de rendu.
 
-- **Usage:**
+- **Usage :**
 
 Pour le définir comme un stub dans les options de montage :
 

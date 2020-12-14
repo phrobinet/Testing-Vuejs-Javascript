@@ -1,6 +1,6 @@
 ## isEmpty
 
-::: warning Avertissement de déprédation
+::: warning Avertissement de dépréciation
 `isEmpty` est déprécié et sera supprimé dans les prochaines versions.
 
 Considérez un appariement personnalisé tel que ceux fournis dans [jest-dom](https://github.com/testing-library/jest-dom#tobeempty).

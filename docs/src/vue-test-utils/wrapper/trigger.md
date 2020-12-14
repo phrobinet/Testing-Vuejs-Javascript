@@ -41,9 +41,9 @@ test('trigger demo', async () => {
 
 - **Définir l'objectif de l'événement :**
 
-Sous le capot, `trigger` cré un objet `Event` et envoie l'événement sur l'élément Wrapper.
+Sous le capot, `trigger` crée un objet `Event` et envoie l'événement sur l'élément Wrapper.
 
-Il n'est pas possible de modifier la valeur `target` d'un objet `Event`, donc vous pouvez pas définir la `target` dans l'objet options.
+Il n'est pas possible de modifier la valeur `target` d'un objet `Event`, donc vous ne pouvez pas définir la `target` dans l'objet options.
 
 Pour ajouter un attribut à la `target`, vous devez définir la valeur de l'élément Wrapper avant d’appeler le `trigger`. Vous pouvez le faire avec la propriété `element`.
 

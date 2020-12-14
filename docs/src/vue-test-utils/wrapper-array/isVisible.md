@@ -2,7 +2,7 @@
 
 Affirme que chaque `Wrapper` de `WrapperArray` est visible.
 
-Retourne `false` si au moins un élément parent a le style `display: non` ou `visibility hidden`.
+Retourne `false` si au moins un élément parent a le style `display: no` ou `visibility hidden`.
 
 Ceci peut être utilisé pour affirmer qu'un élément est caché par `v-show`.
 

@@ -9,7 +9,7 @@ Vue Test Utils comprend un objet de configuration des options définies utilisé
 - type: `Boolean`
 - default: `true`
 
-Contrôler s'il faut ou non afficher des avertissements de dépréciation . Lorsqu'il est sur `true`, tous les avertissements de déprédation sont visibles dans la console.
+Contrôler s'il faut ou non afficher des avertissements de dépréciation. Lorsqu'il est sur `true`, tous les avertissements de déprédation sont visibles dans la console.
 
 Exemple:
 
@@ -24,7 +24,7 @@ config.showDeprecationWarnings = false
 - type: `{ [name: string]: Component | boolean | string }`
 - default: `{}`
 
-Le stub stocké dans `config.stubs` est utilisé par défaut. 
+Le stub stocké dans `config.stubs` est utilisé par défaut.
 Les stubs sont à utiliser dans les composants. Ils sont écrasés par les `stubs` passés dans les options de montage.
 
 Lorsque l'on passe des `stubs` sous forme de tableau dans les options de montage, les `config.stubs` sont convertis en un tableau, et vont stuber les composants avec un composant de base qui retourne `<${component name}-stub>`.
