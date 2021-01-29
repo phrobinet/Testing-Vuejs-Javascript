@@ -126,7 +126,7 @@ it("renders odd numbers", () => {
   expect(NumberRenderer.computed.numbers.call(localThis)).toBe("1, 3, 5, 7, 9")
 })
 ```
-Au lieu de renvoyer le composant et de faire une assertion sur `wrapper.text()`, nous allons utiliser `call` pour fournir un contexte alternatif à `this`. Nous allons voir ce qui se passe si nous n'utilisons pas `call` après avoir réussi le test.
+Au lieu de renvoyer le composant et de faire une affirmation sur `wrapper.text()`, nous allons utiliser `call` pour fournir un contexte alternatif à `this`. Nous allons voir ce qui se passe si nous n'utilisons pas `call` après avoir réussi le test.
 
 L’exécution du test nous donner des résultats :
 
@@ -199,6 +199,6 @@ Bien sûr, vous voulez être sûr que la valeur est correctement renvoyé, alors
 
 ## Conclusion
 
-- Les propriétés computed peuvent être utilisées par `mount` en faisant des assertions sur le balisage rendu
-- Les propriétés computed peuvent être utilisées en utilisant `mount` en faisant des assertions sur le rendu du code.
+- Les propriétés computed peuvent être utilisées par `mount` en faisant des affirmations sur le balisage rendu
+- Les propriétés computed peuvent être utilisées en utilisant `mount` en faisant des affirmations sur le rendu du code.
 - Les propriétés complexes de computed peuvent être testées indépendamment en utilisant `call`.

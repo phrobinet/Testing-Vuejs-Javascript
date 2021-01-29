@@ -178,7 +178,7 @@ jest.mock("@/components/NestedRoute.vue", () => ({
 
 ## L'utilisation d'un faux router
 
-Des fois un réel router n'est pas nécessaire. Modifiez `<NesetedRoute>` pour qu'il montre le nom d'utilisateur qui est dans la chaîne de requête de la route. Cette fois, nous utiliserons le TDD pour implémenter la fonctionnalité. Voici un test de base qui rend simplement le composant et fait une assertion :
+Des fois un réel router n'est pas nécessaire. Modifiez `<NesetedRoute>` pour qu'il montre le nom d'utilisateur qui est dans la chaîne de requête de la route. Cette fois, nous utiliserons le TDD pour implémenter la fonctionnalité. Voici un test de base qui rend simplement le composant et fait une affirmation :
 
 ```js
 import { shallowMount } from "@vue/test-utils"

@@ -51,7 +51,7 @@ export default {
 
 ## Le premier test
 
-Nous ferons une assertion sur le message dans le cas où l'utilisateur n'a pas les privilèges administrateur.
+Nous ferons une affirmation sur le message dans le cas où l'utilisateur n'a pas les privilèges administrateur.
 
 ```js
 import { mount } from '@vue/test-utils'
@@ -97,7 +97,7 @@ Nous pouvons voir que le prop `msg` est traité et que le résultat est correcte
 
 ## Le deuxième test
 
-Faisons une autre assertion dans l'autre état possible, quand `isAdmin` est `true` :
+Faisons une autre affirmation dans l'autre état possible, quand `isAdmin` est `true` :
 
 ```js
 import { mount } from '@vue/test-utils'

@@ -167,7 +167,7 @@ beforeEach(function () {
 
 describe('my test suite', function () {
   it('should have run my global setup', function () {
-    // faire une assertion
+    // faire une affirmation
   });
 });
 ```
@@ -196,7 +196,7 @@ Votre `test/test.spec.js` original devrait maintenant contenir :
 
 describe('my test suite', function () {
   it('should have run my global setup', function () {
-    // faire une assertion
+    // faire une affirmation
   });
 });
 ```

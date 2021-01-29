@@ -37,7 +37,7 @@ Vous pouvez également sauter au moment de l'exécution en utilisant ce .skip().
 ``` js
 it('should only test in the correct environment', function() {
   if (/* check test environment */) {
-    // make assertionsfaire des affirmations
+    // faire des affirmations
 	} else {
     this.skip();
   }
@@ -62,7 +62,7 @@ it('should only test in the correct environment', function() {
 
 Comme ce test ne fait rien, il sera déclaré comme réussi.
 
->Bonne pratique : Ne faites rien ! Un test doit faire une assertion ou utiliser this.skip().
+>Bonne pratique : Ne faites rien ! Un test doit faire une affirmation ou utiliser this.skip().
 
 Pour sauter plusieurs tests de cette manière, utilisez this.skip() dans un hook "before all" :
 

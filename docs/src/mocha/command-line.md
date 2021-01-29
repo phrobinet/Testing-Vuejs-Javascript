@@ -192,11 +192,11 @@ Dans certains cas, la sortie couleur sera explicitement supprimée par certains 
 
 ### `--diff`
 
-Si possible, indiquez la différence entre les valeurs attendues et les valeurs réelles en cas d'échec d'une assertion.
+Si possible, indiquez la différence entre les valeurs attendues et les valeurs réelles en cas d'échec d'une affirmation.
 
 Ce drapeau est inhabituel dans la mesure où il **défaut de ** "vrai" ; utilisez `--no-diff` pour supprimer la propre sortie de diff de Mocha.
 
-Certaines bibliothèques d'assertions fourniront leurs propres diffs, auquel cas celui de Mocha ne sera pas utilisé, quelle que soit la valeur par défaut.
+Certaines bibliothèques d'affirmations fourniront leurs propres diffs, auquel cas celui de Mocha ne sera pas utilisé, quelle que soit la valeur par défaut.
 
 La sortie de diff de Mocha n'est conforme à aucun standard connu, et est conçue pour être lisible par l'homme.
 
@@ -218,7 +218,7 @@ Activez les diffs "inline", une sortie alternative pour les chaînes de caractè
 
 Utile pour travailler avec de grandes chaînes de caractères.
 
-Ne fait rien si une bibliothèque d'assertions fournit sa propre sortie de diff.
+Ne fait rien si une bibliothèque d'affirmations fournit sa propre sortie de diff.
 
 ### `--reporter <name>, -R <name>`
 

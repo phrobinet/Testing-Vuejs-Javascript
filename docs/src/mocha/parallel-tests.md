@@ -103,7 +103,7 @@ Si vous trouvez que vos tests ne fonctionnent pas correctement w
 ✅ Assurez-vous que vous n'utilisez pas [d'autres indicateurs non pris en charge] (https://mochajs.org/#file-order-is-non-deterministic).
 ✅ Vérifiez votre [fichier de configuration](https://mochajs.org/#configuring-mocha-nodejs) ; les options définies dans les fichiers de configuration seront fusionnées avec toute option de ligne de commande.
 ✅ Recherchez les "root hooks" (ils ressemblent à [this](https://mochajs.org/#root-hooks-are-not-global)) dans vos tests. Déplacez-les dans un [Plugin root hook](https://mochajs.org/#root-hook-plugins).
-✅ Les bibliothèques d'assertions, de simulations ou d'autres tests que vous utilisez utilisent-elles des "root hooks" ? Il est possible qu'il faille les migrer pour assurer la compatibilité avec le mode parallèle.
+✅ Les bibliothèques d'affirmations, de simulations ou d'autres tests que vous utilisez utilisent-elles des "root hooks" ? Il est possible qu'il faille les migrer pour assurer la compatibilité avec le mode parallèle.
 ✅ i les tests s'arrêtent inopinément, vous devrez peut-être augmenter le délai d'attente par défaut (via [`--timeout`](https://mochajs.org/#-timeout-ms-t-ms))
 Assurez-vous que vos tests ne dépendent pas d'un ordre précis.
 ✅ Assurez-vous que vos tests ne dépendent pas d'un ordre précis.

@@ -410,7 +410,7 @@ expect(() => wrapper.get('.does-not-exist'))
 ::: warning Avertissement de déprédation
 L'utilisation de `is` pour affirmer que le nœud DOM ou le sélecteur de correspondance `vm` est déprécié et sera supprimé.
 Considérez un appariement personnalisé tel que ceux fournis dans [jest-dom](https://github.com/testing-library/jest-dom#custom-matchers).
-ou pour l'assertion de type d'élément DOM, utilisez native [`Element.tagName`](https://developer.mozilla.org/en-US/docs/Web/API/Element/tagName) à la place.
+ou pour l'affirmation de type d'élément DOM, utilisez native [`Element.tagName`](https://developer.mozilla.org/en-US/docs/Web/API/Element/tagName) à la place.
 
 Pour conserver ces tests, un remplacement valable pour :
 
@@ -498,11 +498,11 @@ expect(wrapper.find('.is-not-visible').isVisible()).toBe(false)
 ::: warning Avertissement de déprédation
 `isVueInstance` est dépréciée et sera supprimée dans les prochaines versions.
 
-Les tests reposant sur l'affirmation `isVueInstance` n'ont que peu ou pas de valeur. Nous suggérons de les remplacer par des assertions ciblées.
+Les tests reposant sur l'affirmation `isVueInstance` n'ont que peu ou pas de valeur. Nous suggérons de les remplacer par des affirmations ciblées.
 
-Pour conserver ces tests, un remplacement valable de `isVueInstance()` est une assertion véridique de `wrapper.find(...).vm`.
+Pour conserver ces tests, un remplacement valable de `isVueInstance()` est une affirmation véridique de `wrapper.find(...).vm`.
 
-L'assertion Wrapper est l'instance de Vue.
+L'affirmation Wrapper est l'instance de Vue.
 :::
 
 

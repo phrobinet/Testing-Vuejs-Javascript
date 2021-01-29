@@ -203,7 +203,7 @@ Cela permettra d'avoir quelque chose comme ceci :
       "apple"
 ```
 
-Lorsqu'une assertion échoue, le message d'erreur doit donner autant de signal que nécessaire à l'utilisateur afin qu'il puisse résoudre son problème rapidement. Vous devez élaborer un message d'échec précis pour vous assurer que les utilisateurs de vos assertions personnalisées ont une bonne expérience de développement.
+Lorsqu'une affirmation échoue, le message d'erreur doit donner autant de signal que nécessaire à l'utilisateur afin qu'il puisse résoudre son problème rapidement. Vous devez élaborer un message d'échec précis pour vous assurer que les utilisateurs de vos affirmations personnalisées ont une bonne expérience de développement.
 
 #### Personnaliser les matchers snapshot
 
@@ -325,11 +325,7 @@ describe('Beware of a misunderstanding! A sequence of dice rolls', () => {
 
 ### `expect.assertions(number)`
 
-`expect.assertions(number)` verifies that a certain number of assertions are called during a test. This is often useful when testing asynchronous code, in order to make sure that assertions in a callback actually got called.
-
-For example, let's say that we have a function `doAsync` that receives two callbacks `callback1` and `callback2`, it will asynchronously call both of them in an unknown order. We can test this with:
-
-Le paramètre `expect.assertions(number)` vérifie qu'un certain nombre d'assertions sont appelées pendant un test. Cela est souvent utile lors de tests de code asynchrone, afin de s'assurer que les assertions d'un rappel ont bien été appelées.
+Le paramètre `expect.assertions(number)` vérifie qu'un certain nombre d'affirmations sont appelées pendant un test. Cela est souvent utile lors de tests de code asynchrone, afin de s'assurer que les affirmations d'un rappel ont bien été appelées.
 
 Par exemple, disons que nous avons une fonction `doAsync` qui reçoit deux callbacks `callback1` et `callback2`, elle les appellera tous les deux de manière asynchrone dans un ordre inconnu. Nous pouvons tester cela avec :
 
@@ -351,7 +347,7 @@ L'appel `expect.assertions(2)` assure que les deux rappels sont effectivement ap
 
 ### `expect.hasAssertions()`
 
-La fonction `expect.hasAssertions()` vérifie qu'au moins une assertion est appelée pendant un test. Ceci est souvent utile lors de tests de code asynchrone, afin de s'assurer que les assertions d'un callback ont bien été appelées.
+La fonction `expect.hasAssertions()` vérifie qu'au moins une affirmation est appelée pendant un test. Ceci est souvent utile lors de tests de code asynchrone, afin de s'assurer que les affirmations d'un callback ont bien été appelées.
 
 
 Par exemple, disons que nous avons quelques fonctions qui traitent toutes de l'état. `prepareState` appelle un callback avec un objet d'état, `validateState` s'exécute sur cet objet d'état, et `waitOnState` renvoie une promesse qui attend que tous les callbacks `prepareState` soient terminés. Nous pouvons tester cela avec :
@@ -497,7 +493,7 @@ Pour un fichier de test individuel, un module ajouté précède tous les modules
 import serializer from 'my-serializer-module';
 expect.addSnapshotSerializer(serializer);
 
-// affecte les assertions expect(value).toMatchSnapshot() dans le fichier de test
+// affecte les affirmations expect(value).toMatchSnapshot() dans le fichier de test
 ```
 
 Si vous ajoutez un snapshot sérialiser dans les fichiers de test individuels au lieu de l'ajouter à la configuration de `snapshotSerializers` :
@@ -591,7 +587,7 @@ describe('the can', () => {
 
 N'utilisez pas de ".toBe" avec des nombres à virgule flottante. Par exemple, en raison de l'arrondissement, en JavaScript, `0.2 + 0.1` n'est pas strictement égal à `0.3`. Si vous avez des nombres à virgule flottante, essayez plutôt `.toBeCloseTo`.
 
-Bien que l'appariement `.toBe` vérifie** l'identité référentielle, il **rapporte** une comparaison approfondie des valeurs si l'assertion échoue. Si les différences entre les propriétés ne vous aident pas à comprendre pourquoi un test échoue, en particulier si le rapport est important, alors vous pouvez déplacer la comparaison dans la fonction `expect`. Par exemple, pour affirmer si des éléments sont la même instance ou non :
+Bien que l'appariement `.toBe` vérifie** l'identité référentielle, il **rapporte** une comparaison approfondie des valeurs si l'affirmation échoue. Si les différences entre les propriétés ne vous aident pas à comprendre pourquoi un test échoue, en particulier si le rapport est important, alors vous pouvez déplacer la comparaison dans la fonction `expect`. Par exemple, pour affirmer si des éléments sont la même instance ou non :
 
 - réécrivez `expect(received).toBe(expected)` comme `expect(Object.is(received, expected)).toBe(true)`.
 - réécrire `expect(received).not.toBe(expected)` comme `expect(Object.is(received, expected)).toBe(false)`.
@@ -1213,7 +1209,7 @@ test('throws on octopus', () => {
 });
 ```
 
-> Note : Vous devez envelopper le code dans une fonction, sinon l'erreur ne sera pas détectée et l'assertion échouera.
+> Note : Vous devez envelopper le code dans une fonction, sinon l'erreur ne sera pas détectée et l'affirmation échouera.
 
 Vous pouvez fournir un argument optionnel pour vérifier qu'une erreur spécifique est lancée :
 

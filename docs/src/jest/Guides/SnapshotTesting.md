@@ -293,7 +293,7 @@ Oui, tous les fichiers d'instantanés doivent être validés en même temps que 
 
 ### Est-ce que les tests instantanés ne fonctionnent qu'avec les composants React ?
 
-Les composants [React](TutorialReact.md) et [React Native](TutorialReactNative.md) sont un bon cas d'utilisation pour les tests d'instantanés. Cependant, les instantanés peuvent capturer n'importe quelle valeur sérialisable et doivent être utilisés chaque fois que l'objectif est de tester si la sortie est correcte. Le dépôt Jest contient de nombreux exemples de test de la sortie de Jest lui-même, de la sortie de la bibliothèque d'assertions de Jest ainsi que des messages de log de diverses parties de la base de code de Jest. Voir un exemple de [snapshotting CLI output](https://github.com/facebook/jest/blob/master/e2e/__tests__/console.test.ts) dans le dépôt Jest.
+Les composants [React](TutorialReact.md) et [React Native](TutorialReactNative.md) sont un bon cas d'utilisation pour les tests d'instantanés. Cependant, les instantanés peuvent capturer n'importe quelle valeur sérialisable et doivent être utilisés chaque fois que l'objectif est de tester si la sortie est correcte. Le dépôt Jest contient de nombreux exemples de test de la sortie de Jest lui-même, de la sortie de la bibliothèque d'affirmations de Jest ainsi que des messages de log de diverses parties de la base de code de Jest. Voir un exemple de [snapshotting CLI output](https://github.com/facebook/jest/blob/master/e2e/__tests__/console.test.ts) dans le dépôt Jest.
 
 ### Quelle est la différence entre un test d'instantané et un test de régression visuelle ?
 

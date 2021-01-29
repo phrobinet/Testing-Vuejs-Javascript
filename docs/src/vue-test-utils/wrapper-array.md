@@ -182,9 +182,9 @@ expect(wrapper.findAll('.is-visible').isVisible()).toBe(true)
 ::: warning Avertissement de déprédation
 `isVueInstance` est dépréciée et sera supprimée dans les prochaines versions.
 
-Les tests reposant sur l'affirmation "isVueInstance" n'ont que peu ou pas de valeur. Nous suggérons de les remplacer par des assertions intentionnelles.
+Les tests reposant sur l'affirmation "isVueInstance" n'ont que peu ou pas de valeur. Nous suggérons de les remplacer par des affirmations intentionnelles.
 
-Pour conserver ces tests, un remplacement valable de `isVueInstance()` est une assertion véridique de `wrapper.find(...).vm`.
+Pour conserver ces tests, un remplacement valable de `isVueInstance()` est une affirmation véridique de `wrapper.find(...).vm`.
 :::
 
 Affirmer que chaque `Wrapper` dans `WrapperArray` est une instance de Vue.

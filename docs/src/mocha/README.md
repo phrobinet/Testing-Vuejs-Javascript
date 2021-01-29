@@ -4,7 +4,7 @@
 | -- | -- |
 | [Installation](./installation.md) | [Pour commencer](./getting-started.md) |
 | [Vue d'ensemble du cycle d'exécution](./run-cycle.md) | [Détecte les appels multiples `to done()`](./detect-multiple.md) |
-| [Assertions](./assertions.md) | [Code asynchrone](./asynchronous-code.md) |
+| [Affirmations](./assertions.md) | [Code asynchrone](./asynchronous-code.md) |
 | [Code synchrone](./synchronous-code.md) | [Fonctions des flèches](./arrow-functions.md) |
 | [Crochets](./hooks.md) | [Tests en cours](./pending-tests.md) |
 | [Tests exclusifs](./exclusive-tests.md) | [Tests inclusifs](./inclusive-tests.md) |

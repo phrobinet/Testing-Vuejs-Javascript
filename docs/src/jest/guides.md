@@ -289,7 +289,7 @@ Oui, tous les fichiers d'instantanés doivent être validés en même temps que 
 
 ### Est-ce que les tests instantanés ne fonctionnent qu'avec les composants React ?
 
-Les composants [React](TutorialReact.md) et [React Native](TutorialReactNative.md) sont un bon cas d'utilisation pour les tests d'instantanés. Cependant, les instantanés peuvent capturer n'importe quelle valeur sérialisable et doivent être utilisés chaque fois que l'objectif est de tester si la sortie est correcte. Le dépôt Jest contient de nombreux exemples de test de la sortie de Jest lui-même, de la sortie de la bibliothèque d'assertions de Jest ainsi que des messages de log de diverses parties de la base de code de Jest. Voir un exemple de [snapshotting CLI output](https://github.com/facebook/jest/blob/master/e2e/__tests__/console.test.ts) dans le dépôt Jest.
+Les composants [React](TutorialReact.md) et [React Native](TutorialReactNative.md) sont un bon cas d'utilisation pour les tests d'instantanés. Cependant, les instantanés peuvent capturer n'importe quelle valeur sérialisable et doivent être utilisés chaque fois que l'objectif est de tester si la sortie est correcte. Le dépôt Jest contient de nombreux exemples de test de la sortie de Jest lui-même, de la sortie de la bibliothèque d'affirmations de Jest ainsi que des messages de log de diverses parties de la base de code de Jest. Voir un exemple de [snapshotting CLI output](https://github.com/facebook/jest/blob/master/e2e/__tests__/console.test.ts) dans le dépôt Jest.
 
 ### Quelle est la différence entre un test d'instantané et un test de régression visuelle ?
 
@@ -426,7 +426,7 @@ Pour activer async/await dans votre projet, installez [`@babel/preset-env`](http
 
 ## Traitement des erreurs
 
-Les erreurs peuvent être traitées à l'aide de la méthode `catch`. Assurez-vous d'ajouter `expect.assertions` pour vérifier qu'un certain nombre d'assertions sont appelées. Sinon, une promesse remplie ne serait pas un échec :
+Les erreurs peuvent être traitées à l'aide de la méthode `catch`. Assurez-vous d'ajouter `expect.assertions` pour vérifier qu'un certain nombre d'affirmations sont appelées. Sinon, une promesse remplie ne serait pas un échec :
 
 ```js
 // Test des erreurs d'asynchronisation à l'aide de Promise.catch.
@@ -455,7 +455,7 @@ it('tests error with async/await', async () => {
 ## `.rejects`
 
 The`.rejects` helper works like the `.resolves` helper. If the promise is fulfilled, the test will automatically fail. `expect.assertions(number)` is not required but recommended to verify that a certain number of [assertions](https://jestjs.io/docs/en/expect#expectassertionsnumber) are called during a test. It is otherwise easy to forget to `return`/`await` the `.resolves` assertions.
-L'aide `.rejects` fonctionne comme l'aide `.resolves`. Si la promesse est tenue, le test échouera automatiquement. L'aide `expect.assertions(number)` n'est pas obligatoire mais recommandée pour vérifier qu'un certain nombre d'[assertions](https://jestjs.io/docs/en/expect#expectassertionsnumber) sont appelées pendant un test. Sinon, il est facile d'oublier de `return`/`await` les assertions `.resolves`.
+L'aide `.rejects` fonctionne comme l'aide `.resolves`. Si la promesse est tenue, le test échouera automatiquement. L'aide `expect.assertions(number)` n'est pas obligatoire mais recommandée pour vérifier qu'un certain nombre d'[affirmations](https://jestjs.io/docs/en/expect#expectassertionsnumber) sont appelées pendant un test. Sinon, il est facile d'oublier de `return`/`await` les affirmations `.resolves`.
 
 ```js
 // Tester les erreurs d'asynchronisation à l'aide de `.rejects`.
@@ -2080,7 +2080,7 @@ Si vous souhaitez essayer Jest avec une base de code existante, il y a plusieurs
 
 - Si vous utilisez Jasmine, ou une API similaire à Jasmine (par exemple [Mocha](https://mochajs.org)), Jest devrait être compatible dans la plupart des cas, ce qui rend la migration moins compliquée.
 - Si vous utilisez AVA, Expect.js (par Automattic), Jasmine, Mocha, proxyquire, Should.js ou Tape, vous pouvez migrer automatiquement avec les codemods Jest (voir ci-dessous).
-- Si vous aimez [chai](http://chaijs.com/), vous pouvez passer à Jest et continuer à utiliser chai. Cependant, nous vous recommandons d'essayer les assertions de Jest et leurs messages d'échec. Les Codemods de Jest peuvent migrer depuis chai (voir ci-dessous).
+- Si vous aimez [chai](http://chaijs.com/), vous pouvez passer à Jest et continuer à utiliser chai. Cependant, nous vous recommandons d'essayer les affirmations de Jest et leurs messages d'échec. Les Codemods de Jest peuvent migrer depuis chai (voir ci-dessous).
 
 ## jest-codemods
 

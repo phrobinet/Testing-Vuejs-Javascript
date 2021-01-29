@@ -80,7 +80,7 @@ describe("FormSubmitter", () => {
 
 Ce test s'explique assez facilement. Nous "moutons" (`shallowMount`) le composant, définissons le nom d'utilisateur et utilisons la méthode que `vue-test-utils` fournie `trigger` pour simuler les entrées de l'utilisateur. `trigger` fonctionne sur des événements personnalisés, ainsi que sur des événements qui utilisent modificateurs, comme `submit.prevent`, `keydown.enter`, et ainsi de suite.
 
-Remarquez qu'après avoir appelé `trigger`, nous faisons un `await wrapper.vm.$nextTick()`. C'est pourquoi nous avons dû marquer le test comme `async` - pour pouvoir utiliser `await`. A partir de la version beta 28 de `vue-test-utils`, vous devez appeler `nextTick` pour vous assurer que le système de réactivité de Vue met à jour le DOM. Parfois, vous pouvez vous en sortir sans appeler `nextTick`, mais si vos composants deviennent plus complexes, vous pouvez rencontrer des problèmes d'exécution et votre assertion pourrait s'exécuter avant que Vue n'ait mis à jour le DOM. Vous pouvez en savoir plus à ce sujet dans la documentation officielle [vue-test-utils documentation](https://vue-test-utils.vuejs.org/guides/#updates-applied-by-vue).
+Remarquez qu'après avoir appelé `trigger`, nous faisons un `await wrapper.vm.$nextTick()`. C'est pourquoi nous avons dû marquer le test comme `async` - pour pouvoir utiliser `await`. A partir de la version beta 28 de `vue-test-utils`, vous devez appeler `nextTick` pour vous assurer que le système de réactivité de Vue met à jour le DOM. Parfois, vous pouvez vous en sortir sans appeler `nextTick`, mais si vos composants deviennent plus complexes, vous pouvez rencontrer des problèmes d'exécution et votre affirmation pourrait s'exécuter avant que Vue n'ait mis à jour le DOM. Vous pouvez en savoir plus à ce sujet dans la documentation officielle [vue-test-utils documentation](https://vue-test-utils.vuejs.org/guides/#updates-applied-by-vue).
 
 
 Le test ci-dessous suit également les trois étapes du test unitaire :
@@ -251,7 +251,7 @@ L'utilisation de `flush-promises` a l'effet de garantir que toutes les promesses
 
 Maintenant le test est réussi. Le code source de `flush-promises` ne fait qu'environ 10 lignes, si vous vous intéressez à Node.js, cela vaut la peine de lire et de comprendre comment il fonctionne.
 
-Nous devons également nous assurer que le point final et le payload sont correct. Ajoutez deux autres assertions au test :
+Nous devons également nous assurer que le point final et le payload sont correct. Ajoutez deux autres affirmations au test :
 
 ```js
 // ...

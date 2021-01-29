@@ -401,7 +401,7 @@ test('the data is peanut butter', () => {
 
 Assurez-vous de renvoyer la promesse - si vous omettez cette déclaration de `return`, votre test se terminera avant que la promesse renvoyée par `fetchData` ne soit résolue et que () n'ait une chance d'exécuter le rappel.
 
-Si vous pensez qu'une promesse va être rejetée, utilisez la méthode `catch`. Veillez à ajouter `expect.assertions` pour vérifier qu'un certain nombre d'assertions sont appelées. Sinon, une promesse tenue ne sera pas rejetée.
+Si vous pensez qu'une promesse va être rejetée, utilisez la méthode `catch`. Veillez à ajouter `expect.assertions` pour vérifier qu'un certain nombre d'affirmations sont appelées. Sinon, une promesse tenue ne sera pas rejetée.
 
 ```js
 test('the fetch fails with an error', () => {
@@ -736,7 +736,7 @@ mockFn.mock.instances[1] === b; // true
 
 Réinitialise toutes les informations stockées dans les tableaux [`mockFn.mock.calls`](#mockfnmockcalls) et [`mockFn.mock.instances`](#mockfnmockinstances).
 
-C'est souvent utile lorsque vous voulez nettoyer les données d'utilisation d'un faux entre deux assertions.
+C'est souvent utile lorsque vous voulez nettoyer les données d'utilisation d'un faux entre deux affirmations.
 
 Attention, `mockClear` remplacera `mockFn.mock`, et pas seulement [`mockFn.mock.calls`](#mockfnmockcalls) et [`mockFn.mock.instances`](#mockfnmockinstances). Vous devez donc éviter d'assigner `mockFn.mock` à d'autres variables, temporaires ou non, pour vous assurer que vous n'accédez pas à des données périmées.
 

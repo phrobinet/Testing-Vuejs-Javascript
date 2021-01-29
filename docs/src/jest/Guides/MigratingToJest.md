@@ -9,7 +9,7 @@ Si vous souhaitez essayer Jest avec une base de code existante, il y a plusieurs
 
 - Si vous utilisez Jasmine, ou une API similaire à Jasmine (par exemple [Mocha](https://mochajs.org)), Jest devrait être compatible dans la plupart des cas, ce qui rend la migration moins compliquée.
 - Si vous utilisez AVA, Expect.js (par Automattic), Jasmine, Mocha, proxyquire, Should.js ou Tape, vous pouvez migrer automatiquement avec les codemods Jest (voir ci-dessous).
-- Si vous aimez [chai](http://chaijs.com/), vous pouvez passer à Jest et continuer à utiliser chai. Cependant, nous vous recommandons d'essayer les assertions de Jest et leurs messages d'échec. Les Codemods de Jest peuvent migrer depuis chai (voir ci-dessous).
+- Si vous aimez [chai](http://chaijs.com/), vous pouvez passer à Jest et continuer à utiliser chai. Cependant, nous vous recommandons d'essayer les affirmations de Jest et leurs messages d'échec. Les Codemods de Jest peuvent migrer depuis chai (voir ci-dessous).
 
 ## jest-codemods
 

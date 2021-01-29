@@ -16,7 +16,7 @@ Il est construit à partir de Vue Test Utils.
 
 ### `jest-matcher-vue-test-utils`
 
-[`jest-matcher-vue-test-utils`](https://github.com/hmsk/jest-matcher-vue-test-utils) ajoute des matchers supplémentaires pour le testeur Jest dans le but de rendre les assertions plus expressives.
+[`jest-matcher-vue-test-utils`](https://github.com/hmsk/jest-matcher-vue-test-utils) ajoute des matchers supplémentaires pour le testeur Jest dans le but de rendre les affirmations plus expressives.
 
 ### `jest-mock-axios`
 

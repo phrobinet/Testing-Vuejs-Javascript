@@ -83,7 +83,7 @@ mockFn.mock.instances[1] === b; // true
 
 Réinitialise toutes les informations stockées dans les tableaux [`mockFn.mock.calls`](#mockfnmockcalls) et [`mockFn.mock.instances`](#mockfnmockinstances).
 
-C'est souvent utile lorsque vous voulez nettoyer les données d'utilisation d'un faux entre deux assertions.
+C'est souvent utile lorsque vous voulez nettoyer les données d'utilisation d'un faux entre deux affirmations.
 
 Attention, `mockClear` remplacera `mockFn.mock`, et pas seulement [`mockFn.mock.calls`](#mockfnmockcalls) et [`mockFn.mock.instances`](#mockfnmockinstances). Vous devez donc éviter d'assigner `mockFn.mock` à d'autres variables, temporaires ou non, pour vous assurer que vous n'accédez pas à des données périmées.
 

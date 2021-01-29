@@ -81,7 +81,7 @@ Cela permettra d'établir des rapports de couverture avec les [déclarants de co
 
 [Karma](http://karma-runner.github.io/) est un programme de test qui lance des navigateurs, effectue des tests et nous les rapporte.
 
-En plus de Karma, vous pouvez utiliser le cadre [Mocha](https://mochajs.org/) pour écrire les tests, et la bibliothèque [Chai](http://chaijs.com/) pour les assertions des tests. Vous pouvez également consulter [Sinon](http://sinonjs.org/) pour créer des spies et des stubs
+En plus de Karma, vous pouvez utiliser le cadre [Mocha](https://mochajs.org/) pour écrire les tests, et la bibliothèque [Chai](http://chaijs.com/) pour les affirmations des tests. Vous pouvez également consulter [Sinon](http://sinonjs.org/) pour créer des spies et des stubs
 
 Vous trouverez ci-dessous une configuration de base de Karma pour Vue Test Utils :
 

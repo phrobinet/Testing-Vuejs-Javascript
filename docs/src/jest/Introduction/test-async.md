@@ -62,10 +62,9 @@ test('the data is peanut butter', () => {
   });
 });
 ```
+Assurez-vous de renvoyer la promesse - si vous omettez cette déclaration de `return`, votre test se terminera avant que la promesse renvoyée par `fetchData` ne soit résolue et que then() n'ait une chance d'exécuter le rappel.
 
-Be sure to return the promise - if you omit this `return` statement, your test will complete before the promise returned from `fetchData` resolves and then() has a chance to execute the callback.
-
-If you expect a promise to be rejected, use the `.catch` method. Make sure to add `expect.assertions` to verify that a certain number of assertions are called. Otherwise, a fulfilled promise would not fail the test.
+Si vous pensez qu'une promesse va être rejetée, utilisez la méthode `catch`. Veillez à ajouter `expect.assertions` pour vérifier qu'un certain nombre d'affirmation sont appelées. Sinon, une promesse tenue ne sera pas rejetée.
 
 ```js
 test('the fetch fails with an error', () => {

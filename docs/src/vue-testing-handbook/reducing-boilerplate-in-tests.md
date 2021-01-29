@@ -306,7 +306,7 @@ it('renders posts', async () => {
   expect(wrapper.findAll('.post').length).toBe(1)
 })
 ```
-C'est une grande amélioration ! Nous sommes passés d'un test où environ la moitié du code était standard et pas réellement lié à l'assertion, à deux lignes ; une pour préparer le composant au test et une autre pour l'assertion.
+C'est une grande amélioration ! Nous sommes passés d'un test où environ la moitié du code était standard et pas réellement lié à l'affirmation, à deux lignes ; une pour préparer le composant au test et une autre pour l'affirmation.
 
 Un autre avantage de ce remaniement est nous avons une fonction flexible `createWrapper`, que nous pouvons utiliser pour tous nos tests.
 

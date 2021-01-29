@@ -127,7 +127,7 @@ L'utilisation de `call` peut être utile dans les situations où vous avez des t
 - `emitted` est une méthode. Elle renvoie un objet avec des propriétés correspondant aux événements émis
 - Chaque propriété de `emitted` est un tableau. Vous pouvez accéder à chaque instance d'un événement émis en utilisant la syntaxe de tableau `[0]`, `[1]` et
 - Les arguments des événements émis sont également enregistrés sous forme de tableaux, et peuvent être consultés en utilisant la syntaxe de tableau `[0]`, `[1]`.
-- `$emit` can be mocked using `call`, assertions can be made without rendering the component
+- `$emit` can be mocked using `call`, affirmations can be made without rendering the component
 - On peut simuler des `$emit` en utilisant `call`, on peut faire des affirmations sans rendre le composant
 
 Le code source du test décrit sur cette page peut être trouvé [ici](https://github.com/lmiller1990/vue-testing-handbook/tree/master/demo-app/tests/unit/Emitter.spec.js).

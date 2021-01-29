@@ -15,7 +15,7 @@ Le plugin est intitulé **NodeJS**, et peut être installé via **Preferences > 
 
 ## WALLABY.JS
 
-[Wallaby.js](https://wallabyjs.com/) est un outil de test continu qui permet une couverture de code en temps réel pour Mocha avec n'importe quelle bibliothèque d'assertion dans les EDI VS Code, Atom, JetBrains (IntelliJ IDEA, WebStorm, etc.), Sublime Text et Visual Studio pour les projets browser et node.js.
+[Wallaby.js](https://wallabyjs.com/) est un outil de test continu qui permet une couverture de code en temps réel pour Mocha avec n'importe quelle bibliothèque d'affirmation dans les EDI VS Code, Atom, JetBrains (IntelliJ IDEA, WebStorm, etc.), Sublime Text et Visual Studio pour les projets browser et node.js.
 
 ![enter image description here](https://mochajs.org/static/wallaby.resize920,9999-withoutEnlargement-pngquant.6d5ba62803.png?ncolors=)
 

@@ -114,7 +114,7 @@ Pour activer async/await dans votre projet, installez [`@babel/preset-env`](http
 
 ## Traitement des erreurs
 
-Les erreurs peuvent être traitées à l'aide de la méthode `catch`. Assurez-vous d'ajouter `expect.assertions` pour vérifier qu'un certain nombre d'assertions sont appelées. Sinon, une promesse remplie ne serait pas un échec :
+Les erreurs peuvent être traitées à l'aide de la méthode `catch`. Assurez-vous d'ajouter `expect.assertions` pour vérifier qu'un certain nombre d'affirmations sont appelées. Sinon, une promesse remplie ne serait pas un échec :
 
 ```js
 // Test des erreurs d'asynchronisation à l'aide de Promise.catch.
@@ -142,8 +142,7 @@ it('tests error with async/await', async () => {
 
 ## `.rejects`
 
-The`.rejects` helper works like the `.resolves` helper. If the promise is fulfilled, the test will automatically fail. `expect.assertions(number)` is not required but recommended to verify that a certain number of [assertions](https://jestjs.io/docs/en/expect#expectassertionsnumber) are called during a test. It is otherwise easy to forget to `return`/`await` the `.resolves` assertions.
-L'aide `.rejects` fonctionne comme l'aide `.resolves`. Si la promesse est tenue, le test échouera automatiquement. L'aide `expect.assertions(number)` n'est pas obligatoire mais recommandée pour vérifier qu'un certain nombre d'[assertions](https://jestjs.io/docs/en/expect#expectassertionsnumber) sont appelées pendant un test. Sinon, il est facile d'oublier de `return`/`await` les assertions `.resolves`.
+L'aide `.rejects` fonctionne comme l'aide `.resolves`. Si la promesse est tenue, le test échouera automatiquement. L'aide `expect.assertions(number)` n'est pas obligatoire mais recommandée pour vérifier qu'un certain nombre d'[affirmations](https://jestjs.io/docs/en/expect#expectassertionsnumber) sont appelées pendant un test. Sinon, il est facile d'oublier de `return`/`await` les affirmations `.resolves`.
 
 ```js
 // Tester les erreurs d'asynchronisation à l'aide de `.rejects`.

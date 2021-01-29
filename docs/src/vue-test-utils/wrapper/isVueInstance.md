@@ -3,11 +3,11 @@
 ::: warning Avertissement de dépréciation
 `isVueInstance` est dépréciée et sera supprimée dans les prochaines versions.
 
-Les tests reposant sur l'affirmation `isVueInstance` n'ont que peu ou pas de valeur. Nous suggérons de les remplacer par des assertions ciblées.
+Les tests reposant sur l'affirmation `isVueInstance` n'ont que peu ou pas de valeur. Nous suggérons de les remplacer par des affirmations ciblées.
 
-Pour conserver ces tests, un remplacement valable de `isVueInstance()` est une assertion véridique de `wrapper.find(...).vm`.
+Pour conserver ces tests, un remplacement valable de `isVueInstance()` est une affirmation véridique de `wrapper.find(...).vm`.
 
-L'assertion Wrapper est l'instance de Vue.
+L'affirmation Wrapper est l'instance de Vue.
 :::
 
 
